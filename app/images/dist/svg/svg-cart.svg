@@ -1,0 +1,6 @@
+<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path fill="currentColor"
+          d="M512,64H90.5l-.9-7.49A64,64,0,0,0,26.07,0H0V42.67H26.07A21.32,21.32,0,0,1,47.25,61.5L81.07,348.82a64,64,0,0,0,63.53,56.51H426.67V362.67H144.6a21.34,21.34,0,0,1-21.19-18.86L120.62,320H465.83ZM430.17,277.33H115.61L95.53,106.67H461Z"/>
+    <circle fill="currentColor" cx="149.33" cy="469.33" r="42.67"/>
+    <circle fill="currentColor" cx="362.67" cy="469.33" r="42.67"/>
+</svg>

@@ -1,0 +1,39 @@
+.breadcrumbs {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  &__item {
+    padding-bottom: 5px;
+    position: relative;
+    a {
+      text-decoration: none;
+      color: #1a1a1a;
+    }
+    span {
+      font-size: 12px;
+      line-height: 1;
+      display: block;
+    }
+    &:not(:last-child)  {
+      padding-right: 30px;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        height: 12px;
+        width: 1px;
+        background: #2067fb;
+        right: 14.5px;
+      }
+    }
+  }
+  &--white {
+    a {
+      color: #fff;
+    }
+    span {
+      color: #fff;
+    }
+  }
+}

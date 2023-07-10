@@ -1,0 +1,240 @@
+<!--#set var="title" value="Новости" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="wrapper">
+    <div class="breadcrumbs">
+        <ol class="breadcrumbs__list nav" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="itemscope"
+                itemtype="https://schema.org/ListItem"
+                class="breadcrumbs__item">
+                <a href="/" itemprop="item">
+                    <span itemprop="name">Главная</span>
+                </a>
+                <meta itemprop="position" content="1">
+            </li>
+            <li itemprop="itemListElement" itemscope="itemscope"
+                itemtype="https://schema.org/ListItem" class="breadcrumbs__item">
+                <span ditemprop="name">Новости</span>
+                <meta itemprop="position" content="2">
+            </li>
+        </ol>
+    </div>
+
+    <div class="header-box header-box--border">
+        <div class="header-box__title">
+            <h1 class="h2">Новости</h1>
+        </div>
+        <ul class="nav header-box__filter">
+            <li><a href="" class="active">Все</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Видео</a></li>
+        </ul>
+    </div>
+
+    <div class="swiper list-tags" id="tagsSlider">
+        <div class="swiper-wrapper page-top-filter__tags__list">
+            <div class="swiper-slide">
+                <a href="" class="active">Акции</a>
+            </div>
+            <div class="swiper-slide"><a href="">Мероприятия</a></div>
+            <div class="swiper-slide"><a href="">Эксклюзив</a></div>
+            <div class="swiper-slide"><a href="">Интервью</a></div>
+            <div class="swiper-slide"><a href="">СМИ о нас</a></div>
+        </div>
+    </div>
+
+    <div class="banner" style="background-color: #0c0c0c;">
+        <picture>
+            <source media="(max-width: 800px)" srcset="images/dist/banner-news_mob.jpg">
+            <source media="(min-width: 801px) and (max-width: 1920px)" srcset="images/dist/banner-news.jpg">
+            <source media="(min-width: 1921px)" srcset="images/dist/banner-news@2.jpg">
+            <img src="images/dist/banner-news.jpg" alt="">
+        </picture>
+        <div class="banner__inner">
+            <div class="banner__inner__top">
+                <div class="banner__date">
+                    12 ОКТЯБРЯ
+                </div>
+                <div class="banner__inner__top__ico">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.05 30.05" width="24" height="24">
+                        <path fill="#2067fb" d="M15,0a15,15,0,1,0,15,15A15,15,0,0,0,15,0Z"/>
+                        <path fill="#fff"
+                              d="M20,14.44,13.74,9.9A.73.73,0,0,0,13,9.84a.76.76,0,0,0-.41.67v9.07a.76.76,0,0,0,.41.67.81.81,0,0,0,.34.08.73.73,0,0,0,.44-.15L20,15.65a.75.75,0,0,0,.31-.61A.7.7,0,0,0,20,14.44Z"/>
+                        <path fill="#fff"
+                              d="M15,0a15,15,0,1,0,15,15A15,15,0,0,0,15,0Zm0,27.54A12.52,12.52,0,1,1,27.54,15,12.51,12.51,0,0,1,15,27.54Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="banner__inner__body">
+                <h2 class="banner__title">BUBBLE Studios и Кинопоиск<br>
+                    представляют официальный трейлер фильма «Гром: Трудное детство».</h2>
+                <p>Смотрите с 1 января 2023 года только на Кинопоиске!</p>
+            </div>
+            <div class="banner__inner__footer">
+                <a href="" class="btn btn--blue w-18 h-44">
+                    <span>ПОДРОБНЕЕ</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="news-item">
+                <div class="news-item__header">
+                    <a href="" class="news-item__img">
+                        <img src="images/dist/news.jpg" srcset="images/dist/news@2.jpg 2x" alt="">
+                    </a>
+                    <div class="news-item__header__bottom">
+                        <span class="news-item__date">10 сентября</span>
+                    </div>
+                </div>
+                <div class="news-item__body">
+                    <a href="" class="news-item__title">
+                        <h2>Фильм "Майор Гром: Чумной Доктор". Премьера 2021 года</h2>
+                    </a>
+                    <div class="news-item__text">
+                        <p>Идеальный полицейский и опытный следователь из Санкт-Петербурга - Майор Гром, готов бороться
+                            с человеком в маске - Чумным Доктором. Смотрите супергеройский фильм 2021года.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="news-item">
+                <div class="news-item__header">
+                    <a href="" class="news-item__img">
+                        <img src="images/dist/news.jpg" srcset="images/dist/news@2.jpg 2x" alt="">
+                    </a>
+                    <div class="news-item__header__bottom">
+                        <span class="news-item__date">10 сентября</span>
+                        <div class="news-item__header__ico">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.05 30.05" width="24" height="24">
+                                <path fill="#2067fb" d="M15,0a15,15,0,1,0,15,15A15,15,0,0,0,15,0Z"/>
+                                <path fill="#fff"
+                                      d="M20,14.44,13.74,9.9A.73.73,0,0,0,13,9.84a.76.76,0,0,0-.41.67v9.07a.76.76,0,0,0,.41.67.81.81,0,0,0,.34.08.73.73,0,0,0,.44-.15L20,15.65a.75.75,0,0,0,.31-.61A.7.7,0,0,0,20,14.44Z"/>
+                                <path fill="#fff"
+                                      d="M15,0a15,15,0,1,0,15,15A15,15,0,0,0,15,0Zm0,27.54A12.52,12.52,0,1,1,27.54,15,12.51,12.51,0,0,1,15,27.54Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item__body">
+                    <a href="" class="news-item__title">
+                        <h2>Фильм "Майор Гром: Чумной Доктор".</h2>
+                    </a>
+                    <div class="news-item__text">
+                        <p>Идеальный полицейский и опытный следователь из Санкт-Петербурга - Майор Гром, готов бороться
+                            с человеком в маске - Чумным Доктором. Смотрите супергеройский фильм 2021года.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="news-item">
+                <div class="news-item__header">
+                    <a href="" class="news-item__img">
+                        <img src="images/dist/news.jpg" srcset="images/dist/news@2.jpg 2x" alt="">
+                    </a>
+                    <div class="news-item__header__bottom">
+                        <span class="news-item__date">11 сентября</span>
+                        <div class="news-item__header__ico">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.95 29.95" width="24" height="24">
+                                <path fill="#2067fb" d="M15,0a15,15,0,1,0,0,30H30V15A15,15,0,0,0,15,0Z"/>
+                                <path fill="#fff"
+                                      d="M15,0a15,15,0,1,0,0,30H30V15A15,15,0,0,0,15,0ZM27.46,27.46H15A12.48,12.48,0,1,1,27.46,15ZM10,10h3.75v6.24a5,5,0,0,1-5,5v-2.5a2.5,2.5,0,0,0,2.49-2.5H7.49V12.48A2.5,2.5,0,0,1,10,10Zm8.74,0h3.74v6.24a5,5,0,0,1-5,5v-2.5a2.5,2.5,0,0,0,2.5-2.5H16.22V12.48A2.5,2.5,0,0,1,18.72,10Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item__body">
+                    <a href="" class="news-item__title">
+                        <h2>Фильм "Майор Гром: Чумной Доктор". Премьера 2021 года</h2>
+                    </a>
+                    <div class="news-item__text">
+                        <p>Идеальный полицейский и опытный следователь из Санкт-Петербурга - Майор Гром, готов бороться
+                            с человеком в маске - Чумным Доктором. Смотрите супергеройский фильм 2021года.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="news-item">
+                <div class="news-item__header">
+                    <a href="" class="news-item__img">
+                        <img src="images/dist/news.jpg" srcset="images/dist/news@2.jpg 2x" alt="">
+                    </a>
+                    <div class="news-item__header__bottom">
+                        <span class="news-item__date">10 сентября</span>
+                        <div class="news-item__header__ico">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.51 30.02" width="18" height="24">
+                                <path fill="#2067fb"
+                                      d="M21.05,4.27l-2.81-2.8A4.94,4.94,0,0,0,14.71,0h-11A3.75,3.75,0,0,0,0,3.75V30H22.51V7.81A5,5,0,0,0,21.05,4.27Z"/>
+                                <path fill="#fff"
+                                      d="M21.05,4.27l-2.81-2.8A4.94,4.94,0,0,0,14.71,0h-11A3.75,3.75,0,0,0,0,3.75V30H22.51V7.81A5,5,0,0,0,21.05,4.27ZM20,27.52H2.5V3.75A1.25,1.25,0,0,1,3.75,2.5h10V8.76H20Z"/>
+                                <rect fill="#fff" x="5" y="12.51" width="12.51" height="7.5"/>
+                                <rect fill="#fff" x="5" y="22.51" width="12.51" height="2.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item__body">
+                    <a href="" class="news-item__title">
+                        <h2>Российское издательство Bubble представило цифровую комикс-платформу</h2>
+                    </a>
+                    <div class="news-item__text">
+                        <p>Идеальный полицейский и опытный следователь из Санкт-Петербурга - Майор Гром, готов бороться
+                            с человеком в маске - Чумным Доктором. Смотрите супергеройский фильм 2021года.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="news-item">
+                <div class="news-item__header">
+                    <a href="" class="news-item__img">
+                        <img src="images/dist/news.jpg" srcset="images/dist/news@2.jpg 2x" alt="">
+                    </a>
+                    <div class="news-item__header__bottom">
+                        <span class="news-item__date">10 сентября</span>
+                    </div>
+                </div>
+                <div class="news-item__body">
+                    <a href="" class="news-item__title">
+                        <h2>Фильм "Майор Гром: Чумной Доктор". Премьера 2021 года</h2>
+                    </a>
+                    <div class="news-item__text">
+                        <p>Идеальный полицейский и опытный следователь из Санкт-Петербурга - Майор Гром, готов бороться
+                            с человеком в маске - Чумным Доктором. Смотрите супергеройский фильм 2021года.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="news-item">
+                <div class="news-item__header">
+                    <a href="" class="news-item__img">
+                        <img src="images/dist/news.jpg" srcset="images/dist/news@2.jpg 2x" alt="">
+                    </a>
+                    <div class="news-item__header__bottom">
+                        <span class="news-item__date">10 сентября</span>
+                    </div>
+                </div>
+                <div class="news-item__body">
+                    <a href="" class="news-item__title">
+                        <h2>Фильм "Майор Гром: Чумной Доктор". Премьера 2021 года</h2>
+                    </a>
+                    <div class="news-item__text">
+                        <p>Идеальный полицейский и опытный следователь из Санкт-Петербурга - Майор Гром, готов бороться
+                            с человеком в маске - Чумным Доктором. Смотрите супергеройский фильм 2021года.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--#include virtual="/parts/pagination.html" -->
+    <!--#include virtual="/parts/subscription.html" -->
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

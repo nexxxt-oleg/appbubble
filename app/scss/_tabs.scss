@@ -1,0 +1,77 @@
+.tabs-box {
+  margin-bottom: 35px;
+  &__header {
+    padding-bottom: 5px;
+  }
+
+  &__nav {
+    &__item {
+      &:not(:last-child) {
+        padding-right: 56px;
+      }
+
+      &__link {
+        display: block;
+        text-decoration: none;
+        color: #bbbbbb;
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: 100%;
+          left: 0;
+          width: 0;
+          height: 3px;
+          background: #2067fb;
+        }
+
+        &.active {
+          color: #1a1a1a;
+
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &__body {
+    padding-bottom: 40px;
+    &__item {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  &__footer {
+    height: 1px;
+    position: relative;
+    background-color: #f5f5f5;
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      height: 1px;
+      width: 100vw;
+      background-color: #f5f5f5;
+    }
+    &::after {
+      left: 100%;
+    }
+    &::before {
+      right: 100%;
+    }
+  }
+  .swiper-button-next, .swiper-button-prev {
+    top: 208px;
+  }
+}

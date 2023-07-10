@@ -1,0 +1,243 @@
+<!--#set var="title" value="Оформление заказа" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="order-page">
+    <div class="wrapper">
+        <div class="breadcrumbs">
+            <ol class="breadcrumbs__list nav" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope="itemscope"
+                    itemtype="https://schema.org/ListItem"
+                    class="breadcrumbs__item">
+                    <a href="/" itemprop="item">
+                        <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li itemprop="itemListElement" itemscope="itemscope"
+                    itemtype="https://schema.org/ListItem" class="breadcrumbs__item">
+                    <span ditemprop="name">Оформление заказа</span>
+                    <meta itemprop="position" content="2">
+                </li>
+            </ol>
+        </div>
+        <header class="page-ebook__title pb-15">
+            <h1 class="h2">Оформление заказа</h1>
+        </header>
+        <form action="" class="order-page__form">
+            <div class="row">
+                <div class="col-lg-8 fpad30">
+                    <div class="page-cart__box order-page__form__basket-section">
+                        <div class="basket-section basket-section--active">
+                            <div class="basket-section__header">
+                                Получатель
+                            </div>
+                            <div class="basket-section__body">
+                                <div class="basket-section__row row">
+                                    <div class="col-lg-12 fpad30">
+                                        <div class="text-field">
+                                            <input class="text-field__input" type="email" id="email" required
+                                                   placeholder="E-mail"/>
+                                            <label class="text-field__label" for="email">E-mail</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-cart__box order-page__form__basket-section">
+                        <div class="basket-section basket-section--active">
+                            <div class="basket-section__header">
+                                Способ оплаты
+                            </div>
+                            <div class="basket-section__body">
+                                <div class="row">
+                                    <div class="col-lg-6 fpad30">
+                                        <ul class="nav basket-section__payment-method">
+                                            <li>
+                                                <label class="radio-custom basket-section__payment-method__item">
+                                                    <input type="radio" name="delivery"
+                                                           value="Оплата картой" checked>
+                                                    <div class="radio-custom__text basket-section__payment-method__item__desc">
+                                                        <div class="basket-section__payment-method__item__desc__name">Оплата картой</div>
+                                                        <div class="basket-section__payment-method__item__desc__ico">
+                                                            <img src="./images/dist/svg/pay.svg" width="122" height="23" alt="Оплата картой">
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radio-custom basket-section__payment-method__item">
+                                                    <input type="radio" name="delivery"
+                                                           value="СБП">
+                                                    <div class="radio-custom__text basket-section__payment-method__item__desc">
+                                                        <div class="basket-section__payment-method__item__desc__name">СБП</div>
+                                                        <div class="basket-section__payment-method__item__desc__ico">
+                                                            <img src="./images/dist/svg/sbp.svg" alt="" width="48" height="27">
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radio-custom basket-section__payment-method__item">
+                                                    <input type="radio" name="delivery"
+                                                           value="ЮMoney">
+                                                    <div class="radio-custom__text basket-section__payment-method__item__desc">
+                                                        <div class="basket-section__payment-method__item__desc__name">ЮMoney</div>
+                                                        <div class="basket-section__payment-method__item__desc__ico">
+                                                            <img src="./images/dist/svg/ym.svg" alt="" width="64" height="13">
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radio-custom basket-section__payment-method__item">
+                                                    <input type="radio" name="delivery"
+                                                           value="SberPay">
+                                                    <div class="radio-custom__text basket-section__payment-method__item__desc">
+                                                        <div class="basket-section__payment-method__item__desc__name">SberPay</div>
+                                                        <div class="basket-section__payment-method__item__desc__ico">
+                                                            <img src="./images/dist/svg/sp.svg" alt="" width="64" height="31">
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radio-custom basket-section__payment-method__item">
+                                                    <input type="radio" name="delivery"
+                                                           value="Qiwi Кошелек">
+                                                    <div class="radio-custom__text basket-section__payment-method__item__desc">
+                                                        <div class="basket-section__payment-method__item__desc__name">Qiwi Кошелек</div>
+                                                        <div class="basket-section__payment-method__item__desc__ico">
+                                                            <img src="./images/dist/svg/qiwi.svg" alt="" width="63" height="23">
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radio-custom basket-section__payment-method__item">
+                                                    <input type="radio" name="delivery"
+                                                           value="Мир Pay">
+                                                    <div class="radio-custom__text basket-section__payment-method__item__desc">
+                                                        <div class="basket-section__payment-method__item__desc__name">Мир Pay</div>
+                                                        <div class="basket-section__payment-method__item__desc__ico">
+                                                            <img src="./images/dist/svg/mp.svg" alt="" width="58" height="27">
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-page__submit-footer">
+                        <button class="btn btn--blue-black btn--blue h-65 w-27">
+                            <span>ОФОРМИТЬ ЗАКАЗ</span>
+                        </button>
+                        <div class="order-page__submit-footer__ps">
+                            Нажимая на кнопку “Оформить заказ”, вы подтверждаете свое согласие с<br>
+                            <a href="" target="_blank">Пользовательским соглашением</a> и <a href="" target="_blank">Политикой
+                            конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 fpad30 col-pad">
+                    <div class="order-page__sb">
+                        <div class="page-cart__box">
+                            <div class="order-page__info-basket open accordion first-open">
+                                <button class="order-page__info-basket__header accordion__control" id="basketInfo">
+                                    ВАШ ЗАКАЗ
+                                </button>
+                                <div class="order-page__info-basket__body group-products accordion__content">
+                                    <ul class="nav order-page__info-basket__list">
+                                        <li class="order-page__info-basket__item">
+                                            <div class="group-products__item feed-product feed-product--top">
+                                                <div class="group-products__item__col-img">
+                                                    <a href="" class="group-products__item__images">
+                                                        <img src="images/dist/book1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="group-products__item__col-desc">
+                                                    <a href="" class="feed-product__title">
+                                                        Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                                                    </a>
+                                                    <div class="feed-product__cat-type feed-product__cat-type--e-book">
+                                                        ЭЛЕКТРОННАЯ КНИГА
+                                                    </div>
+                                                    <div class="group-products__item__footer">
+                                                        <div class="group-products__item__footer__price">
+                                                            <div class="feed-product__old-cost">222 ₽</div>
+                                                            <div class="feed-product__cost">180 ₽</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="order-page__info-basket__item">
+                                            <div class="group-products__item feed-product feed-product--top">
+                                                <div class="group-products__item__col-img">
+                                                    <a href="" class="group-products__item__images">
+                                                        <img src="images/dist/book1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="group-products__item__col-desc">
+                                                    <a href="" class="feed-product__title">
+                                                        Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                                                    </a>
+                                                    <div class="feed-product__cat-type feed-product__cat-type--e-book">
+                                                        ЭЛЕКТРОННАЯ КНИГА
+                                                    </div>
+
+                                                    <div class="group-products__item__footer">
+
+                                                        <div class="group-products__item__footer__price">
+                                                            <div class="feed-product__cost">180 ₽</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-cart__box__footer">
+                            <div class="page-cart__box ">
+                                <dl class="page-cart__params">
+                                    <dt>Товары, 3 шт.</dt>
+                                    <dd>1799 ₽</dd>
+
+                                    <dt>Скидка</dt>
+                                    <dd><span class="color-red">450 ₽</span></dd>
+
+                                    <dt>Ваша персональная скидка (10%)</dt>
+                                    <dd><span class="color-red">134 ₽</span></dd>
+
+                                    <dt>Скидка по промокоду</dt>
+                                    <dd>0 ₽
+
+                                    </dd>
+                                    <dt>Списано баллов</dt>
+                                    <dd>0 ₽</dd>
+
+                                </dl>
+                                <div class="page-cart__box__footer__result">
+                                    <div class="page-cart__box__footer__result__label">
+                                        Итого
+                                    </div>
+                                    <div class="page-cart__box__footer__result__value">
+                                        <span class="page-cart__box__footer__result__sale color-red">выгода 584 ₽</span>
+                                        <span class="page-cart__box__footer__result__cost">1215 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->

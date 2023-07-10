@@ -1,0 +1,122 @@
+.toastify {
+  padding: 15px 45px;
+  color: #1a1a1a;
+  display: inline-block;
+  width: 370px;
+  position: fixed;
+  opacity: 0;
+  transition: all .4s cubic-bezier(.215, .61, .355, 1);
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 21474;
+  background-position: 15px 20px;
+  background-repeat: no-repeat;
+  background-size: 16px auto;
+  &.white {
+    background-color: #f9f9f9;
+  }
+  &.info {
+    border-left:2px solid #2067fb;
+    background-position: 15px 20px;
+    background-repeat: no-repeat;
+    background-size: 16px auto;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%232067fb;%7D%3C/style%3E%3C/defs%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Isolation_Mode' data-name='Isolation Mode'%3E%3Cpath class='cls-1' d='M256,512C114.62,512,0,397.38,0,256S114.62,0,256,0,512,114.62,512,256,397.32,511.85,256,512Zm0-448C150,64,64,150,64,256s86,192,192,192,192-86,192-192S362,64.13,256,64Z'/%3E%3Cpath class='cls-1' d='M308.37,398.55h-64V267.63h-29.1v-64H256A52.4,52.4,0,0,1,308.37,256Z'/%3E%3Ccircle class='cls-1' cx='262.06' cy='144' r='36.61'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  &.error {
+    border-left:2px solid #d71f1f;
+    background-position: 15px 20px;
+    background-repeat: no-repeat;
+    background-size: 16px auto;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve' width='512' height='512'%3E%3Cg%3E%3Cpath fill='%23d71f1f' d='M256,512c141.385,0,256-114.615,256-256S397.385,0,256,0S0,114.615,0,256C0.153,397.322,114.678,511.847,256,512z M234.667,128c0-11.782,9.551-21.333,21.333-21.333c11.782,0,21.333,9.551,21.333,21.333v170.667 c0,11.782-9.551,21.333-21.333,21.333c-11.782,0-21.333-9.551-21.333-21.333V128z M256,384c11.782,0,21.333,9.551,21.333,21.333 s-9.551,21.333-21.333,21.333c-11.782,0-21.333-9.551-21.333-21.333S244.218,384,256,384z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  &.black {
+    background-color: #393939;
+    .toastify__title {
+      color: #fff;
+    }
+    .toastify__text {
+      color: #fff;
+    }
+    .toast-close {
+      color: #8d8d8d;
+    }
+  }
+}
+
+.toastify__title {
+  font-family: "PT Sans Narrow";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.toastify__text {
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 24px;
+}
+
+
+.toastify.on {
+  opacity: 1
+}
+
+.toast-close {
+  background: 0 0;
+  border: 0;
+  color: #000;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1em;
+  opacity: 1;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  right: 15px;
+}
+
+.toastify-right {
+  right: 15px
+}
+
+.toastify-left {
+  left: 15px
+}
+
+.toastify-top {
+  top: -150px
+}
+
+.toastify-bottom {
+  bottom: -150px
+}
+
+.toastify-rounded {
+  border-radius: 25px
+}
+
+.toastify-avatar {
+  width: 1.5em;
+  height: 1.5em;
+  margin: -7px 5px;
+  border-radius: 2px
+}
+
+.toastify-center {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-width: fit-content;
+  max-width: -moz-fit-content
+}
+
+@media only screen and (max-width: 360px) {
+  .toastify-left, .toastify-right {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: fit-content
+  }
+}

@@ -1,0 +1,141 @@
+<!--#set var="title" value="Уведомления настройка" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="personal-profile">
+    <div class="wrapper">
+        <div class="personal-profile__back">
+            <a href="" class="personal-profile__back__link">
+                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="#f8f8f8"
+                          d="M256,512c141.38,0,256-114.62,256-256S397.38,0,256,0,0,114.62,0,256C.15,397.32,114.68,511.85,256,512Z"/>
+                    <path fill="#2067fb"
+                          d="M183.17,286.17,283.73,386.69l30.1-30.17L213.33,256,313,156.31l-30.16-30.17-99.69,99.69a42.67,42.67,0,0,0,0,60.34Z"/>
+                </svg>
+                Назад
+            </a>
+        </div>
+        <div class="personal-profile__purchases">
+            <div class="personal-profile__purchases__header">
+                <h1 class="h2">Настройки уведомлений</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 fpad30">
+                    <div class="personal-profile__option-notifications">
+                        <label class="checkbox-custom">
+                            <input type="checkbox" name="shop" value="1" checked>
+                            <span class="checkbox-custom__inner">
+                                <span class="checkbox-custom__ico">
+                                    <svg width="18" height="18">
+                                        <use xlink:href="#svg-ico-shop"></use>
+                                    </svg>
+                                </span>
+                                <span class="checkbox-custom__desc">
+                                    <span class="checkbox-custom__title">Магазин</span>
+                                    <span class="checkbox-custom__text">Информация по заказам</span>
+                                </span>
+                                <span class="checkbox-custom__value"></span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="personal-profile__option-notifications">
+                        <label class="checkbox-custom">
+                            <input type="checkbox" name="new" value="1" checked>
+                            <span class="checkbox-custom__inner">
+                                <span class="checkbox-custom__ico">
+                                     <svg width="18" height="7">
+                                        <use xlink:href="#svg-ico-new"></use>
+                                    </svg>
+                                </span>
+                                <span class="checkbox-custom__desc">
+                                    <span class="checkbox-custom__title">Новинки</span>
+                                    <span class="checkbox-custom__text">Новые товары, допечатки и предзаказы</span>
+                                </span>
+                                <span class="checkbox-custom__value"></span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="personal-profile__option-notifications">
+                        <label class="checkbox-custom">
+                            <input type="checkbox" name="news" value="1" checked>
+                            <span class="checkbox-custom__inner">
+                                <span class="checkbox-custom__ico">
+                                    <svg width="15" height="18">
+                                        <use xlink:href="#svg-ico-news"></use>
+                                    </svg>
+                                </span>
+                                 <span class="checkbox-custom__desc">
+                                    <span class="checkbox-custom__title">Новости</span>
+                                    <span class="checkbox-custom__text">Новости издательства и BUBBLE Studuos</span>
+                                 </span>
+                                <span class="checkbox-custom__value"></span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="personal-profile__option-notifications">
+                        <label class="checkbox-custom">
+                            <input type="checkbox" name="events" value="1">
+                            <span class="checkbox-custom__inner">
+                                <span class="checkbox-custom__ico">
+                                    <svg width="18" height="18">
+                                        <use xlink:href="#svg-ico-events"></use>
+                                    </svg>
+                                </span>
+                                 <span class="checkbox-custom__desc">
+                                    <span class="checkbox-custom__title">События</span>
+                                    <span class="checkbox-custom__text">События и мероприятия</span>
+                                 </span>
+                                <span class="checkbox-custom__value"></span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="personal-profile__option-notifications">
+                        <label class="checkbox-custom">
+                            <input type="checkbox" name="actions" value="1" checked>
+                            <span class="checkbox-custom__inner">
+                                <span class="checkbox-custom__ico">
+                                    <svg width="18" height="18">
+                                       <use xlink:href="#svg-ico-action"></use>
+                                    </svg>
+                                </span>
+                                 <span class="checkbox-custom__desc">
+                                    <span class="checkbox-custom__title">Акции</span>
+                                    <span class="checkbox-custom__text">Акции - в онлайн и офлайн магазинах</span>
+                                 </span>
+                                <span class="checkbox-custom__value"></span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="personal-profile__option-notifications">
+                        <label class="checkbox-custom">
+                            <input type="checkbox" name="email" value="1" checked>
+                            <span class="checkbox-custom__inner">
+                                <span class="checkbox-custom__ico">
+                                    <svg width="18" height="18">
+                                       <use xlink:href="#svg-ico-email"></use>
+                                    </svg>
+                                </span>
+                                 <span class="checkbox-custom__desc">
+                                    <span class="checkbox-custom__title">E-mail рассылки</span>
+                                    <span class="checkbox-custom__text"></span>
+                                 </span>
+                                <span class="checkbox-custom__value"></span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-6 fpad30 d-flex">
+                    <div class="ml-auto personal-profile__img-notice">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="images/dist/img-notifice-mob.jpg">
+                            <source media="(min-width: 601px)"
+                                    srcset="images/dist/img-notifice.jpg, images/dist/img-notifice@2.jpg 2x">
+                            <img src="images/dist/img-notifice.jpg" alt="" width="470" height="628">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/order-sprite.html" -->
+<!--#include virtual="/parts/footer.html" -->

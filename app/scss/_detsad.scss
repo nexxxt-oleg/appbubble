@@ -1,0 +1,1291 @@
+.grom {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  color: #000;
+
+
+  &__section1 {
+    min-height: 850px;
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    background-color: #000;
+    @include respond(mac) {
+      background-image: url('../images/dist/detsad/bg1@2.jpg');
+    }
+    @include respond(tablet) {
+      background-image: url('../images/dist/detsad/bg1.jpg');
+    }
+
+    @include respond(mobile) {
+      min-height: auto;
+      padding-bottom: 50px;
+    }
+
+    &__top-link {
+      padding-right: 15px;
+      a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+      }
+      &__left {
+        width: 150px;
+        margin-right: 30px;
+      }
+      &__right {
+        width: 150px;
+      }
+    }
+
+    &__age-rating {
+      margin: 0 12px 0 auto;
+      width: 44px;
+      height: 44px;
+      border: 1px solid #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__images {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+
+    &__text {
+      max-width: 840px;
+      margin: 0 auto;
+      text-align: center;
+      color: #fff;
+
+      h1 {
+        font-size: 64px;
+        line-height: 1.3;
+        margin-bottom: 17px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: "PT Sans Narrow";
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        margin-bottom: 24px;
+        margin-top: 0;
+      }
+
+      &__label {
+        width: 150px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto 15px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+        background: url("../images/dist/detsad/bg-films.svg") 50% 50% no-repeat;
+        background-size: contain;
+        font-family: "PT Sans Narrow";
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 10;
+      bottom: -75px;
+      margin-left: 443px;
+      left: 50%;
+      background: url("../images/dist/detsad/after-bg1.svg") 0 0 no-repeat;
+      background-size: contain;
+      width: 231px;
+      height: 158px;
+    }
+  }
+
+  &__section2 {
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+    &__video {
+      padding-bottom: 35px;
+    }
+
+    &__ps {
+      text-align: center;
+
+    }
+  }
+}
+.grom {
+  .h2 {
+    color: #000;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 20;
+  }
+}
+
+
+.grom__section3 {
+  margin-top: 50px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+  color: #fff;
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10;
+  @include respond(mac) {
+    background-image: url('../images/dist/detsad/bg3@2.jpg');
+  }
+  @include respond(tablet) {
+    background-image: url('../images/dist/detsad/bg3.jpg');
+  }
+
+  .h2 {
+    color: #fff;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 24px;
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: -100px;
+    margin-right: 560px;
+    right: 50%;
+    background: url("../images/dist/detsad/after-bg3.svg") 0 0 no-repeat;
+    background-size: contain;
+    width: 211px;
+    height: 262px;
+  }
+
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+
+.grom__section4 {
+  padding-top: 85px;
+  border-bottom: 1px solid #d5d5d5;
+
+  &__title {
+    width: 100%;
+    max-width: 500px;
+    margin: -40px auto 50px;
+    min-height: 175px;
+    background: url('../images/dist/detsad/sectr4-t.svg') 50% 50% no-repeat;
+    background-size: auto 175px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      text-align: center;
+      margin: 0;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: bold;
+    font-family: "PT Sans Narrow";
+    }
+  }
+}
+
+.fpad40 {
+  padding-bottom: 40px;
+}
+
+.team__item {
+  display: flex;
+  padding-bottom: 50px;
+
+  &__pic {
+    min-width: 265px;
+    display: flex;
+    justify-content: center;
+
+    &__inner {
+      position: relative;
+      margin-bottom: auto;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 10px;
+        width: calc(100% - 20px);
+        height: 5px;
+        background-color: #d5d5d5;
+      }
+
+      img {
+        display: block;
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+
+  &__desc {
+    width: 150px;
+    flex-grow: 1;
+  }
+
+  &__header {
+    padding-bottom: 35px;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      bottom: 17px;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: #ff0063;
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__role {
+    color: #737373;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+
+.teams__slider {
+  position: relative;
+  margin-bottom: 90px;
+
+  .swiper {
+    overflow: visible;
+
+    &:not(.swiper-initialized) {
+      .swiper-slide {
+        width: 290px;
+      }
+    }
+  }
+}
+.filming__body {
+  p {
+    margin-bottom: 24px;
+  }
+  .comment {
+    padding-top: 20px;
+  }
+}
+
+.team__item__footer {
+  padding-top: 25px;
+  text-align: center;
+}
+.filming.filming--pt120 {
+  padding-top: 120px;
+  padding-bottom: 130px;
+  .filming__pic {
+    padding-top: 5px;
+    padding-bottom: 55px;
+  }
+}
+.grom__section5 {
+  padding: 95px 0 80px;
+  p {
+    margin-bottom: 20px;
+  }
+
+  &__row1 {
+    padding-bottom: 35px;
+    padding-top: 20px;
+  }
+
+  &__desc {
+    width: 100%;
+    max-width: 470px;
+  }
+  &__pic1 {
+    position: relative;
+    max-width: 480px;
+    padding-bottom: 20px;
+
+    img {
+      display: block;
+      position: relative;
+      z-index: 10;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: -80px;
+      left: -65px;
+      width: 190px;
+      height: 191px;
+      background: url("../images/dist/detsad/sectr5__img2.svg") 0 0 no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__pic2 {
+    margin-left: -110px;
+    padding-bottom: 20px;
+  }
+}
+
+.quote {
+  &__header {
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+    position: relative;
+
+    &__ava {
+      min-width: 100px;
+      width: 100px;
+
+      img {
+        display: block;
+      }
+    }
+
+    &__desc {
+      width: 200px;
+      flex-grow: 1;
+    }
+
+    &__name {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      padding-bottom: 8px;
+    }
+
+    &__role {
+      color: #737373;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__hr {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    &__inner {
+      position: relative;
+      z-index: 1;
+      margin-left: 20px;
+      padding: 0 3px;
+      width: 30px;
+
+      &::after {
+        content: "";
+        width: 100vw;
+        height: 1px;
+        background: #d5d5d5;
+        position: absolute;
+        z-index: 10;
+        bottom: 10px;
+        right: 100%;
+      }
+
+      &::before {
+        content: "";
+        width: 100vw;
+        height: 1px;
+        background: #d5d5d5;
+        position: absolute;
+        z-index: 10;
+        bottom: 10px;
+        left: 100%;
+      }
+    }
+  }
+
+  &__body {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+  }
+}
+
+.filming {
+  padding: 80px 0;
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10;
+  @include respond(mac) {
+    background-image: url('../images/dist/detsad/sectr6@2.jpg');
+  }
+  @include respond(tablet) {
+    background-image: url('../images/dist/detsad/sectr6.jpg');
+  }
+
+  &__header {
+    h2 {
+      color: #fff;
+    }
+  }
+
+  &__pic {
+    padding: 25px 0 45px;
+  }
+
+  &__body {
+    color: #fff;
+
+    .quote {
+      padding-top: 30px;
+    }
+  }
+}
+
+.connection {
+  padding: 90px 0 100px;
+
+  &__pic {
+    position: relative;
+    width: 100%;
+    max-width: 840px;
+    padding-bottom: 50px;
+
+    img {
+      display: block;
+    }
+
+    &__min {
+      position: absolute;
+      z-index: 2;
+      bottom: 15px;
+      right: -170px;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 2;
+        width: 5px;
+        top: 5px;
+        height: 100%;
+        background: #fff;
+        left: -5px;
+      }
+
+      img {
+        position: relative;
+        z-index: 3;
+      }
+    }
+  }
+
+  &__films {
+    max-width: 440px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &__caption {
+      text-align: center;
+      padding-top: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__footer {
+    &__link {
+      height: 70px;
+      width: 210px;
+      margin: 0 auto;
+      color: #fff;
+      display: block;
+      position: relative;
+      & > span {
+        height: 70px;
+        width: 210px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff025e;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        z-index: 10;
+        svg {
+          display: block;
+          margin: 0 auto 3px;
+        }
+      }
+      &::after {
+        bottom: -2px;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        background: #292929;
+        z-index: 1;
+        width: 100%;
+        transition: all .2s ease;
+        right: -2px;
+      }
+    }
+  }
+}
+
+.filming-gallery {
+  position: relative;
+  background: #fff;
+
+  .swiper-slide {
+    width: 320px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 5px 2.5px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-color: #ff0063;
+        opacity: 0;
+        margin: -35px 0 0 -35px;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 384'%3E%3Cpath id='Path' d='M208,0V176H384v32H208V384H176V208H0V176H176V0Z' fill='%23fff'/%3E%3C/svg%3E");
+        background-size: 36px auto;
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grom__section8 {
+  padding: 80px 0;
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10;
+  min-height: 895px;
+  @include respond(mac) {
+    background-image: url('../images/dist/detsad/bg8@2.jpg');
+  }
+  @include respond(tablet) {
+    background-image: url('../images/dist/detsad/bg8.jpg');
+  }
+
+  &__header {
+    h2 {
+      color: #fff;
+      margin-bottom: 0;
+    }
+  }
+
+  &__inner {
+    padding: 0 45px;
+    color: #fff;
+
+    img {
+      display: block;
+      margin-bottom: 50px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  &__hr {
+    height: 15px;
+    overflow: hidden;
+    margin-bottom: 13px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='940' height='7'%3E%3Cpath fill-rule='evenodd' fill='%23ff025e' d='M0 2V0h940v7L0 2Z'/%3E%3C/svg%3E");
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+.poster {
+  padding: 90px 0 100px;
+
+  &__header {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  &__slider {
+    position: relative;
+
+    .swiper {
+      overflow: visible;
+    }
+
+    .swiper-slide {
+      width: 265px;
+      margin-right: 30px;
+
+      a {
+        display: block;
+        position: relative;
+        width: 100%;
+
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: 2;
+          top: 50%;
+          left: 50%;
+          width: 70px;
+          height: 70px;
+          border-radius: 35px;
+          display: flex;
+          align-items: center;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          background-color: #ff0063;
+          opacity: 0;
+          margin: -35px 0 0 -35px;
+          visibility: hidden;
+          transition: all 0.3s ease-in-out;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 384'%3E%3Cpath id='Path' d='M208,0V176H384v32H208V384H176V208H0V176H176V0Z' fill='%23fff'/%3E%3C/svg%3E");
+          background-size: 36px auto;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+          position: relative;
+          z-index: 10;
+        }
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: 100%;
+          width: calc(100% - 30px);
+          left: 15px;
+          height: 5px;
+          background: #d5d5d5;
+        }
+      }
+    }
+  }
+}
+
+.shop {
+  background: url("../images/dist/detsad/shop-bg.jpg") 50% 50% no-repeat;
+  background-size: cover;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 450px;
+    padding-right: 100px;
+    position: relative;
+    z-index: 1;
+
+    .shop__desc {
+      width: 400px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 20px;
+      right: 465px;
+      width: 408px;
+      height: 393px;
+      background: url("../images/dist/detsad/shop-left.png") 50% 50% no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 450px;
+    padding-left: 100px;
+    position: relative;
+    z-index: 1;
+
+    .shop__desc {
+      width: 400px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      left: 480px;
+      width: 454px;
+      height: 438px;
+      background: url("../images/dist/detsad/shop-right.png") 50% 50% no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .shop__desc {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+
+    .h2 {
+      color: #fff;
+    }
+
+    p a {
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .link-btn {
+      margin: 35px auto 0;
+    }
+  }
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  width: 200px;
+  height: 56px;
+  padding-bottom: 5px;
+
+  span {
+    display: block;
+    position: relative;
+    z-index: 10;
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: #ff0b65;
+  }
+}
+
+
+.swiper-button-disabled {
+  display: none !important;
+}
+
+.slider-buttons {
+  display: none
+}
+
+
+.slider-buttons__button {
+  width: 52px;
+  height: 57px;
+  background-color: #ff0063;
+  border: none;
+  color: #fff;
+  transform: perspective(100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  margin-top: -35px;
+}
+
+.slider-buttons__button:hover {
+  background-color: #df0257;
+  transform: rotateY(.1deg)
+}
+
+.slider-buttons__button:focus {
+  background-color: #df0257
+}
+
+.slider-buttons__button_disabled {
+  display: none;
+}
+
+.slider-buttons__button_disabled[aria-disabled=true] {
+  transform: rotateY(.1deg);
+  background-color: #202126
+}
+
+.slider-buttons__button_previous {
+  left: -25px;
+  transform: perspective(100px) rotateY(-12deg)
+}
+
+.slider-buttons__button_next {
+  right: -25px;
+  transform: perspective(100px) rotateY(12deg)
+}
+
+.connection__footer__link .connection__footer__link__bg {
+  color: #ff0063;
+}
+
+.connection__footer__link:hover .connection__footer__link__bg,
+.link-btn:hover .link-btn__bg {
+  color: #df0257;
+}
+.mob-raiting {
+  display: none;
+}
+
+.title-border.title-border--pink:after {
+  border-top: 5px solid #ff025e;
+}
+
+.films-actors__item__header.films-actors__item__header--pink::after {
+  border-top: 5px solid #ff025e;
+}
+.filming .quote__header__role {
+  color: #fff !important;
+}
+.comment__author.comment__author--pink::after {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 30'%3E%3Cdefs%3E%3Cstyle%3E.cls-1,.cls-2{fill:%23ff0063}.cls-1{fill-rule:evenodd}%3C/style%3E%3C/defs%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Слой_1-2' data-name='Слой 1'%3E%3Cpath class='cls-1' d='M0 15v-2h35v2Z'/%3E%3Cpath class='cls-2' d='M51.67 0h10v16.67A13.35 13.35 0 0 1 48.33 30v-6.67A6.67 6.67 0 0 0 55 16.67H45v-10A6.67 6.67 0 0 1 51.67 0ZM75 0h10v16.67A13.35 13.35 0 0 1 71.67 30v-6.67a6.67 6.67 0 0 0 6.66-6.66h-10v-10A6.67 6.67 0 0 1 75 0Z'/%3E%3Cpath id='Shape_4_copy' data-name='Shape 4 copy' class='cls-1' d='M95 15v-2h1028v7Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.gallery-slider--films.mb-0 {
+  margin-bottom: 0;
+}
+
+.zoom-link.zoom-link--pink:before {
+  background-color: #ff025e !important;
+}
+
+.tabs-box__nav-link.tabs-box__nav-link--pink:after {
+  background-color: #ff025e !important;
+}
+.grom__section2__ps p{
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+
+@media only screen and (max-width: 1700px) {
+  .shop__left {
+    padding-right: 0;
+  }
+  .shop__right {
+    padding-left: 0;
+  }
+  .shop__left:after {
+    right: 320px;
+  }
+  .shop__right:after {
+    left: 340px;
+  }
+}
+
+@media only screen and (min-width: 991.1px) {
+  .actors__slider__row {
+    flex-wrap: wrap;
+    .swiper-slide {
+      width: 50%;
+    }
+  }
+  .actors__slider .slider-buttons__button {
+    display: none !important;
+  }
+
+  .filming-gallery .slider-buttons__button {
+    display: none !important;
+  }
+
+}
+@media only screen and (max-width: 991px) {
+  .grom__header__mob-toggle {
+    color: #fff;
+    padding: 5px;
+    border: none;
+    width: 30px;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+
+    span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      margin: 2.5px 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+  .grom__section1__col-age {
+    display: none !important;
+  }
+  .mob-raiting {
+    display: block;
+    top: 6px;
+    right: 15px;
+    position: absolute;
+  }
+  .grom__header__nav__inner .nav {
+    display: block !important;
+    padding-top: 15px;
+  }
+  .grom__header__nav__inner .nav li {
+    padding: 0 0 15px;
+  }
+  .grom__header__nav__inner .nav li a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+  .grom__section1 {
+    background-image: url("../images/dist/detsad/bg1_mob.jpg");
+    background-position: 50% 0;
+  }
+  .grom__section1__images {
+    padding-top: 30px;
+  }
+  .grom__section1__text h1 {
+    font-size: 30px;
+  }
+  .grom__section1__text p {
+    font-size: 14px;
+  }
+  .grom__section1:after {
+    width: 120px;
+    margin-left: -60px;
+    height: 82px;
+    bottom: -55px;
+  }
+  .grom .h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .grom__section2__video {
+    padding-bottom: 20px;
+  }
+  .grom__section3 {
+    background-image: url("../images/dist/detsad/bg3_mob.jpg");
+    .container {
+      position: relative;
+      z-index: 10;
+    }
+    &::after {
+      width: 120px;
+      margin-right: -60px;
+      height: 149px;
+      top: -55px;
+    }
+  }
+  .grom__section4 {
+    padding-top: 60px;
+  }
+  .actors__slider__row {
+    flex-wrap: nowrap;
+  }
+  .actors__slider {
+    position: relative;
+    padding: 0 30px;
+  }
+  .grom__section5__pic2 {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .filming {
+    padding-top: 50px;
+    background-image: url("../images/dist/detsad/sectr6_mob.jpg");
+  }
+  .filming.filming--pt120 {
+    padding-top: 50px;
+  }
+  .connection {
+    padding: 60px 15px;
+  }
+  .connection__pic {
+    padding-right: 95px;
+  }
+  .connection__pic__min {
+    right: 0;
+    width: 175px;
+  }
+  .grom__section8 {
+    background-image: url(../images/dist/detsad/bg8.jpg);
+  }
+  .poster {
+    padding: 50px 0;
+  }
+  .grom__section10 {
+    margin-left: -15px;
+    margin-right: -15px;
+    background-image: none;
+  }
+  .shop__left {
+    background: url("../images/dist/detsad/shop-left-bg.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    padding-right: 30px;
+  }
+  .shop__right {
+    background: url("../images/dist/detsad/shop-right-bg.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    padding-left: 30px;
+  }
+  .shop__left:after {
+    right: 370px;
+  }
+  .shop__right:after {
+    left: 380px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .team__item {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .team__item__desc {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .team__item__header:after {
+    left: 50%;
+    margin-left: -20px;
+  }
+  .connection__pic {
+    padding-right: 65px;
+  }
+  .connection__pic__min {
+    right: 0;
+    width: 125px;
+  }
+  .grom__section8__inner img {
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+  }
+  .grom .h2 {
+    margin-bottom: 20px;
+  }
+  .poster__header {
+    padding-bottom: 20px;
+  }
+  .poster__slider .swiper-slide {
+    padding: 0 15px;
+  }
+  .films-poster-slide {
+    width: 270px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slider-buttons__button_next {
+    right: 0;
+  }
+  .slider-buttons__button_previous {
+    left: 0;
+  }
+  .actors__slider .slider-buttons__button {
+    top: 130px;
+  }
+  .connection__films {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0 15px 20px;
+  }
+  .filming-gallery .swiper-slide a img {
+    height: 160px;
+  }
+  .grom__section8__inner {
+    padding: 0;
+  }
+  .grom__section8 {
+    padding-top: 50px;
+    background-image: url(../images/dist/detsad/bg8_mob.jpg);
+  }
+
+  .shop__left {
+    height: auto;
+    padding-top: 280px;
+    background-image: url("../images/dist/detsad/shop-left-bg_mob.jpg");
+    padding-bottom: 50px;
+    &::after {
+      width: 300px;
+      height: 250px;
+      top: 0;
+      margin-right: -150px;
+      right: 50%;
+    }
+  }
+  .shop__left .shop__desc,
+  .shop__right .shop__desc {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .shop__right {
+    height: auto;
+    padding-top: 320px;
+    background-image: url("../images/dist/detsad/shop-right-bg_mob.jpg");
+    padding-bottom: 50px;
+    &::after {
+      width: 300px;
+      height: 250px;
+      top: 40px;
+      margin-left: -150px;
+      left: 50%;
+      background-image: url("../images/dist/detsad/shop-right_mob.png");
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .grom__section2__video {
+    iframe {
+      height: 200px !important;
+    }
+  }
+  .connection__pic {
+    padding-right: 45px;
+  }
+  .connection__pic__min {
+    right: 0;
+    width: 115px;
+    bottom: 30px;
+  }
+  .filming-gallery .swiper-slide a img {
+    height: 120px;
+  }
+
+}

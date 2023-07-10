@@ -1,0 +1,277 @@
+<!--#set var="title" value="МОй профиль" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="personal-profile">
+    <div class="wrapper">
+        <div class="personal-profile__back">
+            <a href="" class="personal-profile__back__link">
+                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="#f8f8f8"
+                          d="M256,512c141.38,0,256-114.62,256-256S397.38,0,256,0,0,114.62,0,256C.15,397.32,114.68,511.85,256,512Z"/>
+                    <path fill="#2067fb"
+                          d="M183.17,286.17,283.73,386.69l30.1-30.17L213.33,256,313,156.31l-30.16-30.17-99.69,99.69a42.67,42.67,0,0,0,0,60.34Z"/>
+                </svg>
+                Назад
+            </a>
+        </div>
+        <div class="personal-profile__header">
+            <h1 class="h2">МОй профиль</h1>
+        </div>
+        <div class="personal-profile__form">
+            <div class="personal-profile__form__top">
+                <div class="personal-profile__form__ava">
+                    <label class="personal-profile__form__ava__add">
+                        <span>
+                            <i></i>
+                            Добавить<br> аватар
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="fpad30">
+                <div class="text-field ">
+                    <input class="text-field__input" type="text" id="surname" required autocomplete="off"
+                           placeholder="Фамилия"/>
+                    <label class="text-field__label" for="surname">Фамилия</label>
+                </div>
+            </div>
+            <div class="fpad30">
+                <div class="text-field">
+                    <input class="text-field__input" type="text" id="name" required autocomplete="off"
+                           placeholder="Имя"/>
+                    <label class="text-field__label" for="name">Имя</label>
+                </div>
+            </div>
+            <div class="fpad30">
+                <div class="text-field">
+                    <input class="text-field__input" type="text" id="patronymic" required autocomplete="off"
+                           placeholder="Отчество"/>
+                    <label class="text-field__label" for="patronymic">Отчество</label>
+                </div>
+            </div>
+            <div class="fpad30 relative-5">
+                <div class="fs-14 fpad15">Дата рождения</div>
+                <div class="row">
+                    <div class="col-lg-3 mob-fpad20 mob-col-day-reg">
+                        <div class="text-field">
+                            <input class="text-field__input" type="text" id="day" required autocomplete="off"
+                                   placeholder="День"/>
+                            <label class="text-field__label" for="day">День</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mob-fpad20 mob-col-month-reg">
+                        <div class="select-field">
+                            <select name="month" id="monthSelect" class="select-custom">
+                                <option value="">Месяц</option>
+                                <option>Январь</option>
+                                <option>Февраль</option>
+                                <option>Март</option>
+                                <option>Апрель</option>
+                                <option>Май</option>
+                                <option>Июнь</option>
+                                <option>Июль</option>
+                                <option>Август</option>
+                                <option>Сентябрь</option>
+                                <option>Октябрь</option>
+                                <option>Ноябрь</option>
+                                <option>Декабрь</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="text-field">
+                            <input class="text-field__input" type="text" id="year" required autocomplete="off"
+                                   placeholder="Год"/>
+                            <label class="text-field__label" for="year">Год</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fpad30">
+                <div class="text-field">
+                    <input class="text-field__input" type="text" id="nickname" required autocomplete="off"
+                           placeholder="Никнейм"/>
+                    <label class="text-field__label" for="nickname">Никнейм</label>
+                </div>
+            </div>
+            <div class="fpad30">
+                <div class="form-input">
+                    <div class="phone_field js-dropdown">
+                        <div class="phone_field__flag js-dropdown__label">
+                            <img src="./images/dist/svg/ru.svg" alt="">
+                        </div>
+                        <div class="phone_field__row">
+                            <div class="phone_field__code">
+                                +7
+                            </div>
+                            <input type="tel" name="phone" class="phone_field__input"
+                                   id="phoneMask" autocomplete="off"
+                                   placeholder="(___) ___-__-__">
+                            <label for="phoneMask" class="phone_field__label">Номер
+                                телефона</label>
+                        </div>
+                        <div class="js-dropdown__list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fpad30">
+                <div class="text-field">
+                    <input class="text-field__input" type="email" id="email" required autocomplete="off"
+                           placeholder="E-mail" value="name@mail.ru"/>
+                    <label class="text-field__label" for="email">E-mail</label>
+                </div>
+            </div>
+            <div class="fpad30">
+                <div class="text-field">
+                    <input class="text-field__input" type="text" id="card" required autocomplete="off"
+                           placeholder="Номер карты лояльности"/>
+                    <label class="text-field__label" for="card">Номер карты лояльности</label>
+                </div>
+            </div>
+            <div class="personal-profile__form__footer row">
+
+            </div>
+        </div>
+        <div class="personal-profile__footer-link">
+            <a onclick="openModal('removeProfile');" href="javascript:void(0);">Удалить профиль</a>
+        </div>
+    </div>
+</div>
+
+<!-- https://github.com/Choices-js/Choices -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<script src="./js/inputmask.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        let monthSelect = new Choices(document.getElementById('monthSelect'), {
+            itemSelectText: '',
+            shouldSort: false,
+            position: 'bottom',
+            searchEnabled: false,
+
+            callbackOnInit: () => {
+                new SimpleBar(document.querySelector('.select-city .choices__list--dropdown .choices__list'));
+            }
+        });
+
+
+        let countryList = [
+            {
+                "code": "+7",
+                "name": "Россия",
+                "flag": "./images/dist/svg/ru.svg",
+                "placeholder": "(999) 999-99-99"
+            },
+            {
+                "code": "+375",
+                "name": "Беларусь",
+                "flag": "./images/dist/svg/bl.svg",
+                "placeholder": "99 (999) 99-99"
+            },
+            {
+                "code": "+7",
+                "name": "Казахстан",
+                "flag": "./images/dist/svg/kz.svg",
+                "placeholder": "(999) 999-99-99"
+            }
+        ];
+
+
+        function fillPhoneInputs() {
+
+            let phoneFieldCodeLists = document.querySelectorAll('.js-dropdown__list');
+
+            phoneFieldCodeLists.forEach(item => {
+                let template = '';
+
+                countryList.forEach(country => {
+
+                    template += `
+                    <div class="phone_field__item country_code">
+                        <div class="flag">
+                            <img src="${country.flag}" alt="">
+                        </div>
+                        <div class="country">${country.name}</div>
+                         <div class="code">${country.code}</div>
+                    </div>`
+                });
+
+                item.innerHTML = template;
+
+            });
+        }
+
+        fillPhoneInputs();
+
+        let phoneMask = document.getElementById('phoneMask');
+        let im = new Inputmask("(999) 999-99-99");
+        im.mask(phoneMask);
+
+//выпадающий список стран
+        document.querySelectorAll('.js-dropdown').forEach(item => {
+            item.addEventListener('click', function (e) {
+
+                let target = e.target;
+                let phoneField = target.closest('.phone_field');
+                if (!phoneField) return;
+
+                let flag = phoneField.querySelector('.phone_field__flag img');
+                if (!target.closest('.country_code')) return;
+
+                let parent = target.closest('.country_code');
+                let _country = parent.querySelector('.country');
+                let country = getCountryByName(_country.innerHTML.trim());
+                let code = parent.querySelector('.code');
+
+                phoneField.querySelector('.phone_field__code').innerHTML = code.innerText;
+
+                document.getElementById('phoneMask').placeholder = country.placeholder.replace(/9/g, '_');
+                let phoneMask = document.getElementById('phoneMask');
+                let im = new Inputmask(country.placeholder);
+                im.mask(phoneMask);
+
+
+                flag.src = country.flag;
+
+                target.closest('.js-dropdown').classList.remove('dropdown__active');
+
+            })
+        });
+
+
+        function getCountryByName(value) {
+
+            let val = '';
+
+            countryList.forEach(country => {
+                if (country.name === value) {
+                    val = country;
+                }
+            });
+
+            return val;
+
+        }
+
+//dropdown
+        document.querySelector('.js-dropdown__label').addEventListener('click', (e) => {
+            e.target.closest('.js-dropdown').classList.toggle('dropdown__active')
+        });
+
+
+//dropdown закрытие
+        document.addEventListener('click', function (e) {
+            document.querySelectorAll('.js-dropdown').forEach(function (item) {
+                if (!item.contains(e.target)) {
+                    item.classList.remove('dropdown__active');
+                }
+            })
+        });
+
+    });
+</script>
+
+<!--#include virtual="/parts/modal.html" -->
+<!--#include virtual="/parts/footer.html" -->

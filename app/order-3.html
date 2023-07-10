@@ -1,0 +1,533 @@
+<!--#set var="title" value="Оформление заказа" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="order-page">
+    <div class="wrapper">
+        <div class="breadcrumbs">
+            <ol class="breadcrumbs__list nav" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope="itemscope"
+                    itemtype="https://schema.org/ListItem"
+                    class="breadcrumbs__item">
+                    <a href="/" itemprop="item">
+                        <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li itemprop="itemListElement" itemscope="itemscope"
+                    itemtype="https://schema.org/ListItem" class="breadcrumbs__item">
+                    <span ditemprop="name">Оформление заказа</span>
+                    <meta itemprop="position" content="2">
+                </li>
+            </ol>
+        </div>
+        <header class="page-ebook__title pb-15">
+            <h1 class="h2">Оформление заказа</h1>
+        </header>
+        <form action="" class="order-page__form">
+            <div class="row">
+                <div class="col-lg-8 fpad30">
+                    <div class="page-cart__box order-page__form__basket-section">
+                        <div class="basket-section basket-section--finish">
+                            <div class="basket-section__header">
+                                <span class="basket-section__header__number">1</span> Личные данные
+                                <a href="" class="link link--more ml-auto">Изменить</a>
+                            </div>
+                            <div class="basket-section__body">
+                                <div class="basket-section__row row">
+                                    <div class="basket-section__col-country col-lg-3 fpad30">
+                                        <div class="select-field">
+                                            <select name="country" id="countrySelect" class="select-custom">
+                                                <option>Россия</option>
+                                                <option>Казахстан</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 fpad30">
+                                        <div class="select-field error-inp">
+                                            <select required name="city" id="citySelect" class="select-custom">
+                                                <option value="">Выберите город</option>
+                                                <option>Москва</option>
+                                                <option>Санкт-Петербург</option>
+                                                <option>Москва</option>
+                                                <option>Санкт-Петербург</option>
+                                                <option>Москва</option>
+                                                <option>Санкт-Петербург</option>
+                                                <option>Москва</option>
+                                                <option>Санкт-Петербург</option>
+                                                <option>Москва</option>
+                                                <option>Санкт-Петербург</option>
+                                                <option>Москва</option>
+                                                <option>Санкт-Петербург</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 fpad20">
+                                        <div class="alert alert--info ">
+                                            Укажите данные получателя, как в паспорте, иначе служба доставки может
+                                            отказать в выдаче заказа.
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 fpad30">
+                                        <div class="text-field error-inp">
+                                            <input class="text-field__input" type="text" id="surname" required
+                                                   placeholder="Фамилия"/>
+                                            <label class="text-field__label" for="surname">Фамилия</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 fpad30">
+                                        <div class="text-field">
+                                            <input class="text-field__input" type="text" id="name" required
+                                                   placeholder="Имя"/>
+                                            <label class="text-field__label" for="name">Имя</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 fpad30">
+                                        <div class="text-field">
+                                            <input class="text-field__input" type="text" id="patronymic" required
+                                                   placeholder="Отчество"/>
+                                            <label class="text-field__label" for="patronymic">Отчество</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 fpad30">
+                                        <div class="form-input">
+                                            <div class="phone_field js-dropdown">
+                                                <div class="phone_field__flag js-dropdown__label">
+                                                    <img src="./images/dist/svg/ru.svg" alt="">
+                                                </div>
+                                                <div class="phone_field__row">
+                                                    <div class="phone_field__code">
+                                                        +7
+                                                    </div>
+                                                    <input type="tel" name="phone" class="phone_field__input"
+                                                           id="phoneMask" autocomplete="off"
+                                                           placeholder="(___) ___-__-__">
+                                                    <label for="phoneMask" class="phone_field__label">Номер
+                                                        телефона</label>
+                                                </div>
+                                                <div class="js-dropdown__list">
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 fpad30">
+                                        <div class="text-field">
+                                            <input class="text-field__input" type="email" id="email" required
+                                                   placeholder="E-mail"/>
+                                            <label class="text-field__label" for="email">E-mail</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket-section__body__btn">
+                                    <button class="disabled btn btn--blue btn--blue-black h-44 w-14" disabled>
+                                        <span>ДАЛЕЕ</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-cart__box order-page__form__basket-section">
+                        <div class="basket-section basket-section--finish">
+                            <div class="basket-section__header">
+                                <span class="basket-section__header__number">2</span> Способ доставки
+                                <a href="" class="link link--more ml-auto">Изменить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-cart__box order-page__form__basket-section">
+                        <div class="basket-section basket-section--active">
+                            <div class="basket-section__header">
+                                <span class="basket-section__header__number">3</span> Способ оплаты
+                            </div>
+                            <div class="basket-section__body">
+                                <div class="row">
+                                    <div class="col-lg-6 fpad30">
+                                        <ul class="nav basket-section__payment-method">
+                                            <li>
+                                                <label class="radio-custom basket-section__payment-method__item">
+                                                    <input type="radio" name="delivery"
+                                                           value="Оплата картой" checked>
+                                                    <div class="radio-custom__text basket-section__payment-method__item__desc">
+                                                        <div class="basket-section__payment-method__item__desc__name">Оплата картой</div>
+                                                        <div class="basket-section__payment-method__item__desc__ico">
+                                                            <img src="./images/dist/svg/pay.svg" width="122" height="23" alt="Оплата картой">
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radio-custom basket-section__payment-method__item">
+                                                    <input type="radio" name="delivery"
+                                                           value="СБП">
+                                                    <div class="radio-custom__text basket-section__payment-method__item__desc">
+                                                        <div class="basket-section__payment-method__item__desc__name">СБП</div>
+                                                        <div class="basket-section__payment-method__item__desc__ico">
+                                                            <img src="./images/dist/svg/sbp.svg" alt="" width="48" height="27">
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radio-custom basket-section__payment-method__item">
+                                                    <input type="radio" name="delivery"
+                                                           value="ЮMoney">
+                                                    <div class="radio-custom__text basket-section__payment-method__item__desc">
+                                                        <div class="basket-section__payment-method__item__desc__name">ЮMoney</div>
+                                                        <div class="basket-section__payment-method__item__desc__ico">
+                                                            <img src="./images/dist/svg/ym.svg" alt="" width="64" height="13">
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radio-custom basket-section__payment-method__item">
+                                                    <input type="radio" name="delivery"
+                                                           value="SberPay">
+                                                    <div class="radio-custom__text basket-section__payment-method__item__desc">
+                                                        <div class="basket-section__payment-method__item__desc__name">SberPay</div>
+                                                        <div class="basket-section__payment-method__item__desc__ico">
+                                                            <img src="./images/dist/svg/sp.svg" alt="" width="64" height="31">
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radio-custom basket-section__payment-method__item">
+                                                    <input type="radio" name="delivery"
+                                                           value="Qiwi Кошелек">
+                                                    <div class="radio-custom__text basket-section__payment-method__item__desc">
+                                                        <div class="basket-section__payment-method__item__desc__name">Qiwi Кошелек</div>
+                                                        <div class="basket-section__payment-method__item__desc__ico">
+                                                            <img src="./images/dist/svg/qiwi.svg" alt="" width="63" height="23">
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radio-custom basket-section__payment-method__item">
+                                                    <input type="radio" name="delivery"
+                                                           value="Мир Pay">
+                                                    <div class="radio-custom__text basket-section__payment-method__item__desc">
+                                                        <div class="basket-section__payment-method__item__desc__name">Мир Pay</div>
+                                                        <div class="basket-section__payment-method__item__desc__ico">
+                                                            <img src="./images/dist/svg/mp.svg" alt="" width="58" height="27">
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-12 fpad30">
+                                        <textarea name="rew" class="form__textarea form__textarea--min" placeholder="Комментарий к заказу"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-page__submit-footer">
+                        <button class="btn btn--blue-black btn--blue h-65 w-27">
+                            <span>ОФОРМИТЬ ЗАКАЗ</span>
+                        </button>
+                        <div class="order-page__submit-footer__ps">
+                            Нажимая на кнопку “Оформить заказ”, вы подтверждаете свое согласие с<br>
+                            <a href="" target="_blank">Пользовательским соглашением</a> и <a href="" target="_blank">Политикой
+                            конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 fpad30 col-pad">
+                    <div class="order-page__sb">
+                        <div class="page-cart__box">
+                            <div class="order-page__info-basket open accordion first-open">
+                                <button class="order-page__info-basket__header accordion__control" id="basketInfo">
+                                    ВАШ ЗАКАЗ
+                                </button>
+                                <div class="order-page__info-basket__body group-products accordion__content">
+                                    <ul class="nav order-page__info-basket__list">
+                                        <li class="order-page__info-basket__item">
+                                            <div class="group-products__item feed-product feed-product--top">
+                                                <div class="group-products__item__col-img">
+                                                    <a href="" class="group-products__item__images">
+                                                        <img src="images/dist/book1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="group-products__item__col-desc">
+                                                    <a href="" class="feed-product__title">
+                                                        Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                                                    </a>
+                                                    <div class="feed-product__cat-type feed-product__cat-type--print">
+                                                        печатная книга
+                                                    </div>
+                                                    <div class="group-products__item__footer">
+                                                        <div class="group-products__item__footer__left">
+                                                            <span class="group-products__item__count">1 шт.</span>
+                                                        </div>
+                                                        <div class="group-products__item__footer__price">
+                                                            <div class="feed-product__old-cost">222 ₽</div>
+                                                            <div class="feed-product__cost">180 ₽</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="order-page__info-basket__item">
+                                            <div class="group-products__item feed-product feed-product--top">
+                                                <div class="group-products__item__col-img">
+                                                    <a href="" class="group-products__item__images">
+                                                        <img src="images/dist/book1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="group-products__item__col-desc">
+                                                    <div class="feed-product__pre-title">ПРЕДЗАКАЗ</div>
+                                                    <a href="" class="feed-product__title">
+                                                        Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                                                    </a>
+                                                    <div class="feed-product__sub-title">
+                                                        Размер: M, Цвет: Синий
+                                                    </div>
+                                                    <div class="feed-product__cat-type feed-product__cat-type--print">
+                                                        печатная книга
+                                                    </div>
+
+                                                    <div class="group-products__item__footer">
+                                                        <div class="group-products__item__footer__left">
+                                                            <span class="group-products__item__count">1 шт.</span>
+                                                        </div>
+                                                        <div class="group-products__item__footer__price">
+                                                            <div class="feed-product__cost">180 ₽</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="order-page__info-basket__item">
+                                            <div class="group-products__item feed-product feed-product--top">
+                                                <div class="group-products__item__col-img">
+                                                    <a href="" class="group-products__item__images">
+                                                        <img src="images/dist/book1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="group-products__item__col-desc">
+                                                    <a href="" class="feed-product__title">
+                                                        Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                                                    </a>
+                                                    <div class="feed-product__cat-type feed-product__cat-type--print">
+                                                        печатная книга
+                                                    </div>
+                                                    <div class="group-products__item__footer">
+                                                        <div class="group-products__item__footer__left">
+                                                            <span class="group-products__item__count">1 шт.</span>
+                                                        </div>
+                                                        <div class="group-products__item__footer__price">
+                                                            <div class="feed-product__gift-label">
+                                                                <svg width="18" height="18"
+                                                                     xmlns="http://www.w3.org/2000/svg"
+                                                                     viewBox="0 0 512 512">
+                                                                    <path fill="#2067fb"
+                                                                          d="M448,149.33H381.14A139.65,139.65,0,0,0,426.67,42.67H384c0,61.46-42.05,91.88-88.58,102.4A197.14,197.14,0,0,0,320,64a64,64,0,0,0-128,0,197.14,197.14,0,0,0,24.58,81.07C170.05,134.55,128,104.13,128,42.67H85.33a139.65,139.65,0,0,0,45.53,106.66H64a64,64,0,0,0-64,64v85.34H42.67V512H469.33V298.67H512V213.33A64,64,0,0,0,448,149.33ZM256,42.67A21.33,21.33,0,0,1,277.33,64,164.5,164.5,0,0,1,256,128.28,164.5,164.5,0,0,1,234.67,64,21.33,21.33,0,0,1,256,42.67ZM42.67,213.33A21.33,21.33,0,0,1,64,192H234.67v64h-192Zm42.66,85.34H234.67V469.33H85.33ZM426.67,469.33H277.33V298.67H426.67ZM469.33,256h-192V192H448a21.33,21.33,0,0,1,21.33,21.33Z"></path>
+                                                                </svg>
+                                                                ПОДАРОК
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-cart__box__footer">
+                            <div class="page-cart__box ">
+                                <dl class="page-cart__params">
+                                    <dt>Товары, 3 шт.</dt>
+                                    <dd>1799 ₽</dd>
+
+                                    <dt>Скидка</dt>
+                                    <dd><span class="color-red">450 ₽</span></dd>
+
+                                    <dt>Ваша персональная скидка (10%)</dt>
+                                    <dd><span class="color-red">134 ₽</span></dd>
+
+                                    <dt>Скидка по промокоду</dt>
+                                    <dd>0 ₽
+
+                                    </dd>
+                                    <dt>Списано баллов</dt>
+                                    <dd>0 ₽</dd>
+
+                                    <dt>Вес товаров</dt>
+                                    <dd>1 кг</dd>
+                                </dl>
+                                <div class="page-cart__box__footer__result">
+                                    <div class="page-cart__box__footer__result__label">
+                                        Итого
+                                    </div>
+                                    <div class="page-cart__box__footer__result__value">
+                                        <span class="page-cart__box__footer__result__sale color-red">выгода 584 ₽</span>
+                                        <span class="page-cart__box__footer__result__cost">1215 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert--info">
+                        Минимальный заказ 250 ₽, после применения всех скидок.
+                        <br>
+                        <br>
+                        Бесплатная доставка по Москве при сумме заказа от 3500 ₽.
+                        <br>
+                        <br>
+                        Накопительная скидка или промокод не распространяется на товары, участвующие в акциях.
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- https://github.com/Choices-js/Choices -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.9/simplebar.min.js"
+        integrity="sha512-xAAb5tNhb12Tx88hMa8IdJI+3pzHBk4V4sQ4w8FIFkXEvlh1PYYma0oPnIENPYeLeblWavY7AlkJj3XzJlif0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/inputmask.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        new Choices(document.getElementById('countrySelect'), {
+            itemSelectText: '',
+            searchEnabled: false,
+            shouldSort: false,
+            position: 'bottom',
+        });
+        let citySelect = new Choices(document.getElementById('citySelect'), {
+            itemSelectText: '',
+            shouldSort: false,
+            position: 'bottom',
+            noResultsText: 'Результатов не найдено',
+            //searchEnabled: false,
+            classNames: {
+                containerOuter: 'choices select-city',
+            },
+            callbackOnInit: () => {
+                new SimpleBar(document.querySelector('.select-city .choices__list--dropdown .choices__list'));
+            }
+        });
+
+
+        let countryList = [
+            {
+                "code": "+7",
+                "name": "Россия",
+                "flag": "./images/dist/svg/ru.svg",
+                "placeholder": "(999) 999-99-99"
+            },
+            {
+                "code": "+375",
+                "name": "Беларусь",
+                "flag": "./images/dist/svg/bl.svg",
+                "placeholder": "99 (999) 99-99"
+            },
+            {
+                "code": "+7",
+                "name": "Казахстан",
+                "flag": "./images/dist/svg/kz.svg",
+                "placeholder": "(999) 999-99-99"
+            }
+        ];
+
+
+        function fillPhoneInputs() {
+
+            let phoneFieldCodeLists = document.querySelectorAll('.js-dropdown__list');
+
+            phoneFieldCodeLists.forEach(item => {
+                let template = '';
+
+                countryList.forEach(country => {
+
+                    template += `
+                    <div class="phone_field__item country_code">
+                        <div class="flag">
+                            <img src="${country.flag}" alt="">
+                        </div>
+                        <div class="country">${country.name}</div>
+                         <div class="code">${country.code}</div>
+                    </div>`
+                });
+
+                item.innerHTML = template;
+
+            });
+        }
+
+        fillPhoneInputs();
+
+        let phoneMask = document.getElementById('phoneMask');
+        let im = new Inputmask("(999) 999-99-99");
+        im.mask(phoneMask);
+
+//выпадающий список стран
+        document.querySelectorAll('.js-dropdown').forEach(item => {
+            item.addEventListener('click', function (e) {
+
+                let target = e.target;
+                let phoneField = target.closest('.phone_field');
+                if (!phoneField) return;
+
+                let flag = phoneField.querySelector('.phone_field__flag img');
+                if (!target.closest('.country_code')) return;
+
+                let parent = target.closest('.country_code');
+                let _country = parent.querySelector('.country');
+                let country = getCountryByName(_country.innerHTML.trim());
+                let code = parent.querySelector('.code');
+
+                phoneField.querySelector('.phone_field__code').innerHTML = code.innerText;
+
+                document.getElementById('phoneMask').placeholder = country.placeholder.replace(/9/g, '_');
+                let phoneMask = document.getElementById('phoneMask');
+                let im = new Inputmask(country.placeholder);
+                im.mask(phoneMask);
+
+
+                flag.src = country.flag;
+
+                target.closest('.js-dropdown').classList.remove('dropdown__active');
+
+            })
+        });
+
+
+        function getCountryByName(value) {
+
+            let val = '';
+
+            countryList.forEach(country => {
+                if (country.name === value) {
+                    val = country;
+                }
+            });
+
+            return val;
+
+        }
+
+//dropdown
+        document.querySelector('.js-dropdown__label').addEventListener('click', (e) => {
+            e.target.closest('.js-dropdown').classList.toggle('dropdown__active')
+        });
+
+
+//dropdown закрытие
+        document.addEventListener('click', function (e) {
+            document.querySelectorAll('.js-dropdown').forEach(function (item) {
+                if (!item.contains(e.target)) {
+                    item.classList.remove('dropdown__active');
+                }
+            })
+        });
+
+    });
+</script>
+<!--#include virtual="/parts/footer.html" -->

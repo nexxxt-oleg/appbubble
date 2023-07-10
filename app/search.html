@@ -1,0 +1,90 @@
+<!--#set var="title" value="Поиск" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="search-page">
+    <div class="search-page__header">
+        <form action="">
+            <div class="search-page__form">
+                <div class="search-page__form__wrap">
+                    <button class="search-page__form__submit">
+                        <svg width="24" height="24">
+                            <use xlink:href="#svg-search"></use>
+                        </svg>
+                    </button>
+                    <input class="search-page__form__inp" name="s" type="text" placeholder="Комиксы, мерч, герои, авторы ... ">
+                </div>
+                <div id="mobSearchOptions" class="swiper swiper-horizontal search-page__form__options">
+                    <div class="swiper-wrapper">
+                        <div class="search-page__form__options__item swiper-slide">
+                            <label class="search-page__form__options__item__label">
+                                <input type="radio" name="options" value="1" checked>
+                                <span class="search-page__form__options__item__label__val">Все</span>
+                            </label>
+                        </div>
+                        <div class="search-page__form__options__item swiper-slide">
+                            <label class="search-page__form__options__item__label">
+                                <input type="radio" name="options" value="2">
+                                <span class="search-page__form__options__item__label__val">Электронные комиксы</span>
+                            </label>
+                        </div>
+                        <div class="search-page__form__options__item swiper-slide">
+                            <label class="search-page__form__options__item__label">
+                                <input type="radio" name="options" value="3">
+                                <span class="search-page__form__options__item__label__val">Печатные комиксы</span>
+                            </label>
+                        </div>
+                        <div class="search-page__form__options__item swiper-slide">
+                            <label class="search-page__form__options__item__label">
+                                <input type="radio" name="options" value="4">
+                                <span class="search-page__form__options__item__label__val">Герои</span>
+                            </label>
+                        </div>
+                        <div class="search-page__form__options__item swiper-slide">
+                            <label class="search-page__form__options__item__label">
+                                <input type="radio" name="options" value="4">
+                                <span class="search-page__form__options__item__label__val">Авторы</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="search-page__queries">
+        <div class="search-page__queries__title">
+            Популярные запросы
+        </div>
+        <ul class="nav search-page__queries__list">
+            <li>
+                <a href="">Майор Гром</a>
+            </li>
+            <li>
+                <a href="">Чумной Доктор</a>
+            </li>
+            <li>
+                <a href="">Красная Фурия</a>
+            </li>
+            <li>
+                <a href="">Союзники том 3: Имаго</a>
+            </li>
+            <li>
+                <a href="">Марина Привалова</a>
+            </li>
+            <li>
+                <a href="">Майор Игорь Гром. Книга 2. Идеальный хищник</a>
+            </li>
+            <li>
+                <a href="">Инок</a>
+            </li>
+            <li>
+                <a href="">Бесобой</a>
+            </li>
+            <li>
+                <a href="">Артём Габрелянов</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

@@ -1,0 +1,512 @@
+<!--#set var="title" value="Поиск" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="search-page">
+    <div class="search-page__header">
+        <form action="">
+            <div class="search-page__form">
+                <div class="search-page__form__wrap">
+                    <button class="search-page__form__submit">
+                        <svg width="24" height="24">
+                            <use xlink:href="#svg-search"></use>
+                        </svg>
+                    </button>
+                    <input class="search-page__form__inp" name="s" type="text"
+                           placeholder="Комиксы, мерч, герои, авторы ... " value="Гром">
+                    <div class="search-page__form__clear">
+                        <svg width="18" height="18">
+                            <use xlink:href="#svg-del"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div id="mobSearchOptions" class="swiper swiper-horizontal search-page__form__options">
+                    <div class="swiper-wrapper">
+                        <div class="search-page__form__options__item swiper-slide">
+                            <label class="search-page__form__options__item__label">
+                                <input type="radio" name="options" value="1" checked>
+                                <span class="search-page__form__options__item__label__val">Все</span>
+                            </label>
+                        </div>
+                        <div class="search-page__form__options__item swiper-slide">
+                            <label class="search-page__form__options__item__label">
+                                <input type="radio" name="options" value="2">
+                                <span class="search-page__form__options__item__label__val">Электронные комиксы</span>
+                            </label>
+                        </div>
+                        <div class="search-page__form__options__item swiper-slide">
+                            <label class="search-page__form__options__item__label">
+                                <input type="radio" name="options" value="3">
+                                <span class="search-page__form__options__item__label__val">Печатные комиксы</span>
+                            </label>
+                        </div>
+                        <div class="search-page__form__options__item swiper-slide">
+                            <label class="search-page__form__options__item__label">
+                                <input type="radio" name="options" value="4">
+                                <span class="search-page__form__options__item__label__val">Герои</span>
+                            </label>
+                        </div>
+                        <div class="search-page__form__options__item swiper-slide">
+                            <label class="search-page__form__options__item__label">
+                                <input type="radio" name="options" value="4">
+                                <span class="search-page__form__options__item__label__val">Авторы</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="search-page__not-res">
+            <div class="search-page__not-res__title">
+                Мы ничего не нашли по вашему запросу, но у нас есть другие классные комиксы:
+            </div>
+            <div class="search-page__not-res__img">
+                <img src="images/dist/not-search.jpg" width="200" height="189" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="search-page__result">
+        <div class="search-page__result__group group-products">
+            <div class="group-products__header header-box">
+
+                <a href="" class="group-products__title">
+                    Электронные комиксы
+                </a>
+                <a href="" class="group-products__count">
+                    320
+                </a>
+                <a href="" class="link ml-auto link--more">Смотреть все</a>
+            </div>
+            <div class="group-products__list">
+                <div class="group-products__item feed-product">
+                    <div class="group-products__item__col-img">
+                        <a href="" class="group-products__item__images">
+                            <ul class="nav feed-product__labels feed-product__labels--min">
+                                <li class="feed-product__labels__item feed-product__labels__item--new">
+                                    <div class="feed-product__labels__item__value">
+                                        NEW
+                                    </div>
+                                </li>
+                                <li class="feed-product__labels__item feed-product__labels__item--hit">
+                                    <div class="feed-product__labels__item__value">
+                                        ХИТ
+                                    </div>
+                                </li>
+                                <li class="feed-product__labels__item feed-product__labels__item--sale">
+                                    <div class="feed-product__labels__item__value">
+                                        10%
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                            <img src="images/dist/book1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="group-products__item__col-desc">
+                        <a href="" class="feed-product__title">
+                            Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                        </a>
+                        <a href="" class="feed-product__cat-type feed-product__cat-type--e-book">
+                            ЭЛЕКТРОННАЯ КНИГА
+                        </a>
+                        <div class="group-products__item__footer">
+                            <div class="group-products__item__footer__left">
+                                <span class="feed-product__in-library">
+                                    <svg class="ico" width="14" height="14">
+                                        <use xlink:href="#svg-ac-library"></use>
+                                    </svg>
+                                    УЖЕ В БИБЛИОТЕКЕ
+                                </span>
+                            </div>
+                            <div class="group-products__item__footer__right">
+                                <a href="" class="feed-product__fav">
+                                    <svg class="icon" width="24" height="23">
+                                        <use xlink:href="#svg-fav"></use>
+                                    </svg>
+                                </a>
+                                <div class="group-products__item__bay">
+                                    <button class="btn btn--blue btn--bay">
+                                        <span class="btn__ico">
+                                            <svg class="icon" width="18" height="16">
+                                                <use xlink:href="#svg-ebook"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-products__item__col-right">
+                        <a href="" class="feed-product__fav">
+                            <svg class="icon" width="24" height="23">
+                                <use xlink:href="#svg-fav"></use>
+                            </svg>
+                        </a>
+                        <div class="group-products__item__bay">
+                            <button class="btn btn--blue btn--bay">
+                                <span class="btn__text">КУПИТЬ</span>
+                                <span class="btn__ico">
+                                    <svg class="icon" width="18" height="16">
+                                        <use xlink:href="#svg-ebook"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-products__item feed-product">
+                    <div class="group-products__item__col-img">
+                        <a href="" class="group-products__item__images">
+                            <img src="images/dist/book1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="group-products__item__col-desc">
+                        <a href="" class="feed-product__title">
+                            Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                        </a>
+                        <a href="" class="feed-product__cat-type feed-product__cat-type--e-book">
+                            ЭЛЕКТРОННАЯ КНИГА
+                        </a>
+                        <div class="group-products__item__footer">
+                            <div class="group-products__item__footer__left">
+                                <div class="feed-product__cost">180 ₽</div>
+                            </div>
+                            <div class="group-products__item__footer__right">
+                                <a href="" class="feed-product__fav">
+                                    <svg class="icon" width="24" height="23">
+                                        <use xlink:href="#svg-fav"></use>
+                                    </svg>
+                                </a>
+                                <div class="group-products__item__bay">
+                                    <button class="btn btn--blue btn--bay">
+                                        <span class="btn__ico">
+                                            <svg class="icon" width="18" height="16">
+                                                <use xlink:href="#svg-ebook"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-products__item__col-right">
+                        <a href="" class="feed-product__fav">
+                            <svg class="icon" width="24" height="23">
+                                <use xlink:href="#svg-fav"></use>
+                            </svg>
+                        </a>
+                        <div class="group-products__item__bay">
+                            <button class="btn btn--blue btn--bay">
+                                <span class="btn__text">КУПИТЬ</span>
+                                <span class="btn__ico">
+                                    <svg class="icon" width="18" height="16">
+                                        <use xlink:href="#svg-ebook"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-products__item feed-product">
+                    <div class="group-products__item__col-img">
+                        <a href="" class="group-products__item__images">
+                            <img src="images/dist/book1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="group-products__item__col-desc">
+                        <a href="" class="feed-product__title">
+                            Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                        </a>
+                        <a href="" class="feed-product__cat-type feed-product__cat-type--e-book">
+                            ЭЛЕКТРОННАЯ КНИГА
+                        </a>
+                        <div class="group-products__item__footer">
+                            <div class="group-products__item__footer__left">
+                                <div class="feed-product__cost">180 ₽</div>
+                            </div>
+                            <div class="group-products__item__footer__right">
+                                <a href="" class="feed-product__fav">
+                                    <svg class="icon" width="24" height="23">
+                                        <use xlink:href="#svg-fav"></use>
+                                    </svg>
+                                </a>
+                                <div class="group-products__item__bay">
+                                    <button class="btn btn--blue btn--bay">
+                                        <span class="btn__ico">
+                                            <svg class="icon" width="18" height="16">
+                                                <use xlink:href="#svg-ebook"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-products__item__col-right">
+                        <a href="" class="feed-product__fav">
+                            <svg class="icon" width="24" height="23">
+                                <use xlink:href="#svg-fav"></use>
+                            </svg>
+                        </a>
+                        <div class="group-products__item__bay">
+                            <button class="btn btn--blue btn--bay">
+                                <span class="btn__text">КУПИТЬ</span>
+                                <span class="btn__ico">
+                                    <svg class="icon" width="18" height="16">
+                                        <use xlink:href="#svg-ebook"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-box-mob">
+                    <a href="" class="link link--more">Смотреть все</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-page__result__group group-products">
+            <div class="group-products__header header-box">
+                <a href="" class="group-products__title">
+                    Печатные комиксы
+                </a>
+                <a href="" class="group-products__count">
+                    320
+                </a>
+                <a href="" class="link ml-auto link--more">Смотреть все</a>
+            </div>
+            <div class="group-products__list">
+                <div class="group-products__item feed-product">
+                    <div class="group-products__item__col-img">
+                        <a href="" class="group-products__item__images">
+                            <ul class="nav feed-product__labels feed-product__labels--min">
+                                <li class="feed-product__labels__item feed-product__labels__item--new">
+                                    <div class="feed-product__labels__item__value">
+                                        NEW
+                                    </div>
+                                </li>
+                                <li class="feed-product__labels__item feed-product__labels__item--hit">
+                                    <div class="feed-product__labels__item__value">
+                                        ХИТ
+                                    </div>
+                                </li>
+                                <li class="feed-product__labels__item feed-product__labels__item--sale">
+                                    <div class="feed-product__labels__item__value">
+                                        10%
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                            <img src="images/dist/book1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="group-products__item__col-desc">
+                        <a href="" class="feed-product__title">
+                            Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                        </a>
+                        <a href="" class="feed-product__cat-type feed-product__cat-type--print">печатная книга</a>
+                        <div class="group-products__item__footer">
+                            <div class="group-products__item__footer__left">
+                                <div class="feed-product__cost">180 ₽</div>
+                                <span class="feed-product__purchased">
+                                    <svg class="ico" width="14" height="14">
+                                        <use xlink:href="#svg-ac-orders"></use>
+                                    </svg>
+                                    УЖЕ КУПЛЕН
+                                </span>
+                            </div>
+                            <div class="group-products__item__footer__right">
+                                <a href="" class="feed-product__fav">
+                                    <svg class="icon" width="24" height="23">
+                                        <use xlink:href="#svg-fav"></use>
+                                    </svg>
+                                </a>
+                                <div class="group-products__item__bay">
+                                    <button class="btn btn--blue btn--bay">
+                                        <span class="btn__ico">
+                                            <svg class="icon" width="18" height="16">
+                                                <use xlink:href="#svg-cart"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="group-products__item__col-right">
+                        <a href="" class="feed-product__fav">
+                            <svg class="icon" width="24" height="23">
+                                <use xlink:href="#svg-fav"></use>
+                            </svg>
+                        </a>
+                        <div class="group-products__item__bay">
+                            <button class="btn btn--blue btn--bay">
+                                <span class="btn__text">КУПИТЬ</span>
+                                <span class="btn__ico">
+                                    <svg class="icon" width="18" height="18">
+                                        <use xlink:href="#svg-cart"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-products__item feed-product">
+                    <div class="group-products__item__col-img">
+                        <a href="" class="group-products__item__images">
+                            <ul class="nav feed-product__labels feed-product__labels--min">
+                                <li class="feed-product__labels__item feed-product__labels__item--new">
+                                    <div class="feed-product__labels__item__value">
+                                        NEW
+                                    </div>
+                                </li>
+                                <li class="feed-product__labels__item feed-product__labels__item--hit">
+                                    <div class="feed-product__labels__item__value">
+                                        ХИТ
+                                    </div>
+                                </li>
+                                <li class="feed-product__labels__item feed-product__labels__item--sale">
+                                    <div class="feed-product__labels__item__value">
+                                        10%
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                            <img src="images/dist/book1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="group-products__item__col-desc">
+                        <a href="" class="feed-product__title">
+                            Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                        </a>
+                        <a href="" class="feed-product__cat-type feed-product__cat-type--print">печатная книга</a>
+                        <div class="group-products__item__footer">
+                            <div class="group-products__item__footer__left">
+                                <div class="feed-product__old-cost">280 ₽</div>
+                                <div class="feed-product__cost">180 ₽</div>
+                            </div>
+                            <div class="group-products__item__footer__right">
+                                <a href="" class="feed-product__fav">
+                                    <svg class="icon" width="24" height="23">
+                                        <use xlink:href="#svg-fav"></use>
+                                    </svg>
+                                </a>
+                                <div class="group-products__item__bay">
+                                    <button class="btn btn--blue btn--bay">
+                                        <span class="btn__ico">
+                                            <svg class="icon" width="18" height="16">
+                                                <use xlink:href="#svg-cart"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="group-products__item__col-right">
+                        <a href="" class="feed-product__fav">
+                            <svg class="icon" width="24" height="23">
+                                <use xlink:href="#svg-fav"></use>
+                            </svg>
+                        </a>
+                        <div class="group-products__item__bay">
+                            <button class="btn btn--blue btn--bay">
+                                <span class="btn__text">КУПИТЬ</span>
+                                <span class="btn__ico">
+                                    <svg class="icon" width="18" height="18">
+                                        <use xlink:href="#svg-cart"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-products__item feed-product">
+                    <div class="group-products__item__col-img">
+                        <a href="" class="group-products__item__images">
+                            <ul class="nav feed-product__labels feed-product__labels--min">
+                                <li class="feed-product__labels__item feed-product__labels__item--new">
+                                    <div class="feed-product__labels__item__value">
+                                        NEW
+                                    </div>
+                                </li>
+                                <li class="feed-product__labels__item feed-product__labels__item--hit">
+                                    <div class="feed-product__labels__item__value">
+                                        ХИТ
+                                    </div>
+                                </li>
+                                <li class="feed-product__labels__item feed-product__labels__item--sale">
+                                    <div class="feed-product__labels__item__value">
+                                        10%
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                            <img src="images/dist/book1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="group-products__item__col-desc">
+                        <a href="" class="feed-product__title">
+                            Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                        </a>
+                        <a href="" class="feed-product__cat-type feed-product__cat-type--print">печатная книга</a>
+                        <div class="group-products__item__footer">
+                            <div class="group-products__item__footer__left">
+                                <div class="feed-product__cost">180 ₽</div>
+                            </div>
+                            <div class="group-products__item__footer__right">
+                                <a href="" class="feed-product__fav">
+                                    <svg class="icon" width="24" height="23">
+                                        <use xlink:href="#svg-fav"></use>
+                                    </svg>
+                                </a>
+                                <div class="group-products__item__bay">
+                                    <button class="btn btn--blue btn--bay">
+                                        <span class="btn__ico">
+                                            <svg class="icon" width="18" height="16">
+                                                <use xlink:href="#svg-cart"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="group-products__item__col-right">
+                        <a href="" class="feed-product__fav">
+                            <svg class="icon" width="24" height="23">
+                                <use xlink:href="#svg-fav"></use>
+                            </svg>
+                        </a>
+                        <div class="group-products__item__bay">
+                            <button class="btn btn--blue btn--bay">
+                                <span class="btn__text">КУПИТЬ</span>
+                                <span class="btn__ico">
+                                    <svg class="icon" width="18" height="18">
+                                        <use xlink:href="#svg-cart"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-box-mob">
+                    <a href="" class="link link--more">Смотреть все</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

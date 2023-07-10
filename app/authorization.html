@@ -1,0 +1,60 @@
+<!--#set var="title" value="Авторизация" -->
+<!--#include virtual="/parts/header-min.html" -->
+
+    <div class="auth-page">
+        <div class="wrapper">
+            <div class="auth-page__inner">
+                <div class="auth-page__inner__img">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/dist/auth_mob.png">
+                        <source media="(min-width: 601px)" srcset="images/dist/auth.png, images/dist/auth@2.png 2x">
+                        <img src="images/dist/auth.png" alt="">
+                    </picture>
+                </div>
+                <div class="auth-page__inner__text">
+                    <div class="auth-page__email">
+                        Код из e-mail, отправленный на
+                        name@gmail.com
+                    </div>
+                    <div class="auth-page__desc-info">
+                        <div class="auth-page__desc-info__code">
+                            <div class="auth-page__desc-info__code__wrap">
+                                <input type="text" class="auth-page__desc-info__code__inp" maxlength="4">
+                                <div class="auth-page__desc-info__code__border">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="auth-page__desc-info__timer ">
+                            0:56
+                        </div>
+                        <a href="" class="btn btn--blue h-44 btn-pad20"><span>Отправить код еще раз</span></a>
+                    </div>
+                    <div class="auth-page__desc-info-footer">
+                        <span>Или</span> <a href="" class="link link--more link--white">измените e-mail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    const maxChars = 4;
+    const input = document.querySelector('.auth-page__desc-info__code__inp');
+
+    input.addEventListener('keydown', function(){
+        if (this.value.length >= maxChars) {
+            this.value = this.value.substr(0, maxChars);
+        }
+    });
+
+    input.addEventListener('keyup', function(){
+        if (this.value.length >= maxChars) {
+            this.value = this.value.substr(0, maxChars);
+        }
+    });
+</script>
+<!--#include virtual="/parts/footer.html" -->

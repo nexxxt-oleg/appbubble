@@ -1,0 +1,231 @@
+<!--#set var="title" value="Программа лояльности" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="wrapper">
+    <div class="breadcrumbs">
+        <ol class="breadcrumbs__list nav" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="itemscope"
+                itemtype="https://schema.org/ListItem"
+                class="breadcrumbs__item">
+                <a href="/" itemprop="item">
+                    <span itemprop="name">Главная</span>
+                </a>
+                <meta itemprop="position" content="1">
+            </li>
+            <li itemprop="itemListElement" itemscope="itemscope"
+                itemtype="https://schema.org/ListItem" class="breadcrumbs__item">
+                <span ditemprop="name">Программа лояльности</span>
+                <meta itemprop="position" content="2">
+            </li>
+        </ol>
+    </div>
+    <div class="loyalty-top row">
+        <div class="col-lg-7 ">
+            <header class="page-title">
+                <h1>Программа лояльности</h1>
+                <div class="fs-24 ff-narrow loyalty-top__desc">Для наших самых преданных читателей мы разработали <br>особую
+                    систему поощрения в виде накопительной скидки!
+                </div>
+                <div class="fpad30">
+                    <button class="btn btn--blue btn--blue-black h-44 w-21">
+                        <span>УЧАСТВОВАТЬ</span>
+                    </button>
+                </div>
+            </header>
+        </div>
+        <div class="col-lg-5">
+            <div class="personal-profile__progress-item loyalty-top__progress loyalty-user">
+                <div class="personal-profile__progress-item__status-title">
+                    Ваш статус - «Новичок»
+                    <div class="personal-profile__progress-item__status-title__sale">скидка 0%</div>
+                </div>
+                <div class="personal-profile__progress-item__status-text">
+                    До следующего статуса осталось 5 000 ₽
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="nav loyalty-status">
+        <li class="active">
+            <div class="loyalty-status__item">
+                <div class="loyalty-status__item__ico">
+                    <img src="images/dist/status1.png" width="60" height="60" alt="Новичок"/>
+                </div>
+                <div class="loyalty-status__item__desc">
+                    <div class="loyalty-status__item__percent"></div>
+                    <div class="loyalty-status__item__title">Новичок</div>
+                    <div class="loyalty-status__item__cost">0 ₽</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="loyalty-status__item">
+                <div class="loyalty-status__item__ico">
+                    <img src="images/dist/status2.png" width="60" height="60" alt="Любитель"/>
+                </div>
+                <div class="loyalty-status__item__desc">
+                    <div class="loyalty-status__item__percent">- 2%</div>
+                    <div class="loyalty-status__item__title">Любитель</div>
+                    <div class="loyalty-status__item__cost">7 000 ₽</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="loyalty-status__item">
+                <div class="loyalty-status__item__ico">
+                    <img src="images/dist/status3.png" width="60" height="60" alt="Энтузиаст"/>
+                </div>
+                <div class="loyalty-status__item__desc">
+                    <div class="loyalty-status__item__percent">- 4%</div>
+                    <div class="loyalty-status__item__title">Энтузиаст</div>
+                    <div class="loyalty-status__item__cost">15 000 ₽</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="loyalty-status__item">
+                <div class="loyalty-status__item__ico">
+                    <img src="images/dist/status4.png" width="60" height="60" alt="Фанат"/>
+                </div>
+                <div class="loyalty-status__item__desc">
+                    <div class="loyalty-status__item__percent">- 6%</div>
+                    <div class="loyalty-status__item__title">Фанат</div>
+                    <div class="loyalty-status__item__cost">25 000 ₽</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="loyalty-status__item">
+                <div class="loyalty-status__item__ico">
+                    <img src="images/dist/status5.png" width="60" height="60" alt="Знаток"/>
+                </div>
+                <div class="loyalty-status__item__desc">
+                    <div class="loyalty-status__item__percent">- 8%</div>
+                    <div class="loyalty-status__item__title">Знаток</div>
+                    <div class="loyalty-status__item__cost">40 000 ₽</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="loyalty-status__item">
+                <div class="loyalty-status__item__ico">
+                    <img src="images/dist/status6.png" width="60" height="60" alt="Эксперт"/>
+                </div>
+                <div class="loyalty-status__item__desc">
+                    <div class="loyalty-status__item__percent">- 10%</div>
+                    <div class="loyalty-status__item__title">Эксперт</div>
+                    <div class="loyalty-status__item__cost">60 000 ₽</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+    <div class="loyalty-footer">
+        <div class="row">
+            <div class="col-lg-7">
+
+                <div class="faq">
+                    <div class="faq__title">Часто задаваемые вопросы</div>
+                    <div class="accordion-container">
+                        <div class="ac faq__item js-enabled" id="ac-0">
+                            <div class="ac-header">
+                                <button class="ac-trigger" id="ac-trigger-0" role="button" aria-controls="ac-panel-0"
+                                        aria-disabled="false" aria-expanded="false">
+                                    Как это работает?
+                                </button>
+                            </div>
+                            <div class="ac-panel" id="ac-panel-0" role="region" aria-labelledby="ac-trigger-0"
+                                 style="transition-duration: 600ms; height: 0px;">
+                                <div class="ac-text text">
+                                    <p>Это работа в продакшне, и она не имеет чётких границ; если у вас есть опыт работы
+                                        в
+                                        кино/рекламе — это плюс, но не решающий фактор; вы должны быть внимательны,
+                                        пунктуальны, энергичны; в перерыве между съёмками фильмов у нас есть масса
+                                        проектов,
+                                        на которых вы сможете получать практику и постоянно расти; это в первую очередь
+                                        административная должность, но мы не ограничиваем ваш потенциал</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ac faq__item js-enabled" id="ac-1">
+                            <div class="ac-header">
+                                <button class="ac-trigger" id="ac-trigger-1" role="button" aria-controls="ac-panel-1"
+                                        aria-disabled="false" aria-expanded="false">Где я могу узнать, какая у меня
+                                    накопилась скидка?
+                                </button>
+                            </div>
+                            <div class="ac-panel" id="ac-panel-1" role="region" aria-labelledby="ac-trigger-1"
+                                 style="transition-duration: 600ms; height: 0px;">
+                                <div class="ac-text text">
+                                    <p>Это работа в продакшне, и она не имеет чётких границ; если у вас есть опыт работы
+                                        в
+                                        кино/рекламе — это плюс, но не решающий фактор; вы должны быть внимательны,
+                                        пунктуальны, энергичны; в перерыве между съёмками фильмов у нас есть масса
+                                        проектов,
+                                        на которых вы сможете получать практику и постоянно расти; это в первую очередь
+                                        административная должность, но мы не ограничиваем ваш потенциал</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ac faq__item js-enabled" id="ac-2">
+                            <div class="ac-header">
+                                <button class="ac-trigger" id="ac-trigger-2" role="button" aria-controls="ac-panel-2"
+                                        aria-disabled="false" aria-expanded="false">Действует ли скидка на товары,
+                                    участвующие в других скидочных программах или акциях?
+                                </button>
+                            </div>
+                            <div class="ac-panel" id="ac-panel-2" role="region" aria-labelledby="ac-trigger-2"
+                                 style="transition-duration: 600ms; height: 0px;">
+                                <div class="ac-text text">
+                                    <p>Нет, на такие товары накопительная скидка не распространяется.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ac faq__item js-enabled" id="ac-3">
+                            <div class="ac-header">
+                                <button class="ac-trigger" id="ac-trigger-3" role="button" aria-controls="ac-panel-3"
+                                        aria-disabled="false" aria-expanded="false">Учитывается ли в прогрессе
+                                    накопления скидки стоимость доставки?
+                                </button>
+                            </div>
+                            <div class="ac-panel" id="ac-panel-3" role="region" aria-labelledby="ac-trigger-3"
+                                 style="transition-duration: 600ms; height: 0px;">
+                                <div class="ac-text text">
+                                    <p>Нет, на такие товары накопительная скидка не распространяется.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ac faq__item js-enabled" id="ac-4">
+                            <div class="ac-header">
+                                <button class="ac-trigger" id="ac-trigger-4" role="button" aria-controls="ac-panel-4"
+                                        aria-disabled="false" aria-expanded="false">Карта фандома BUBBLE
+                                </button>
+                            </div>
+                            <div class="ac-panel" id="ac-panel-4" role="region" aria-labelledby="ac-trigger-4"
+                                 style="transition-duration: 600ms; height: 0px;">
+                                <div class="ac-text text">
+                                    <p>Нет, на такие товары накопительная скидка не распространяется.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 loyalty-footer__img">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/dist/faq-mob.jpg">
+                    <source media="(max-width: 1920px) and (min-width: 601px)" srcset="images/dist/faq.jpg">
+                    <source media="(min-width: 1921px)" srcset="images/dist/faq@2.jpg">
+                    <img class="align-center" src="images/dist/faq.jpg" alt="" width="470" height="470">
+                </picture>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+<script>
+    new Accordion('.accordion-container');
+</script>
+<!--#include virtual="/parts/footer.html" -->

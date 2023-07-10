@@ -1,0 +1,39 @@
+<!--#set var="title" value="Избранное" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="wrapper">
+    <div class="breadcrumbs">
+        <ol class="breadcrumbs__list nav" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="itemscope"
+                itemtype="https://schema.org/ListItem"
+                class="breadcrumbs__item">
+                <a href="/" itemprop="item">
+                    <span itemprop="name">Главная</span>
+                </a>
+                <meta itemprop="position" content="1">
+            </li>
+            <li itemprop="itemListElement" itemscope="itemscope"
+                itemtype="https://schema.org/ListItem" class="breadcrumbs__item">
+                <span ditemprop="name">Избранное</span>
+                <meta itemprop="position" content="2">
+            </li>
+        </ol>
+    </div>
+
+
+    <div class="page-fav-empty">
+        <picture>
+            <source media="(max-width: 1920px)" srcset="images/dist/fav_emty.png">
+            <source media="(min-width: 1921px)" srcset="images/dist/fav_emty@2.png">
+            <img src="images/dist/fav_emty.png" alt="" width="250" height="250">
+        </picture>
+        <h1 class="h2">Вы ещё ничего не добавилИ</h1>
+        <a href="" class="btn--blue btn btn--blue-black h-44 w-27">
+            <span>ПЕРЕЙТИ НА ГЛАВНУЮ</span>
+        </a>
+    </div>
+
+
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

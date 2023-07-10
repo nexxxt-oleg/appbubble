@@ -1,0 +1,420 @@
+<!--#set var="title" value="Корзина" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="bg-silver">
+    <div class="wrapper">
+        <div class="breadcrumbs">
+            <ol class="breadcrumbs__list nav" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope="itemscope"
+                    itemtype="https://schema.org/ListItem"
+                    class="breadcrumbs__item">
+                    <a href="/" itemprop="item">
+                        <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li itemprop="itemListElement" itemscope="itemscope"
+                    itemtype="https://schema.org/ListItem" class="breadcrumbs__item">
+                    <span ditemprop="name">Корзина</span>
+                    <meta itemprop="position" content="2">
+                </li>
+            </ol>
+        </div>
+        <div class="page-cart">
+            <div class="page-cart__header">
+                <h1 class="title-h1">Корзина</h1>
+                <div class="alert alert--info">
+                    Электронные товары оплачиваются отдельно от физических!
+                </div>
+                <div class="alert alert--info">
+                    Внимание! В корзине есть товар по предзаказу, ваш заказ будет отправлен после того, как товар
+                    появится в
+                    наличии. Если не хотите ждать, разбейте заказ на два заказа.
+                </div>
+            </div>
+            <div class="page-cart__body">
+                <div class="page-cart__box">
+                    <div class="page-cart__box__header">
+                        <div class="page-cart__box__header__caption">Товары</div>
+                        <div class="page-cart__box__header__count">3</div>
+                    </div>
+                    <div class="page-cart__box__body">
+                        <ul class="nav page-cart__box__list group-products">
+                            <li class="page-cart__box__list__item feed-product group-products__item">
+                                <div class="page-cart__box__list__item__col-img">
+                                    <a href="" class="group-products__item__images">
+                                        <ul class="nav feed-product__labels feed-product__labels--min">
+                                            <li class="feed-product__labels__item feed-product__labels__item--sale">
+                                                <div class="feed-product__labels__item__value">
+                                                    10%
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <img src="images/dist/book1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="page-cart__box__list__item__col-desc">
+                                    <div class="group-products__item__top">
+                                        <a href="" class="feed-product__title">
+                                            Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                                        </a>
+                                        <a href="" class="feed-product__cat-type feed-product__cat-type--print">печатная
+                                            книга</a>
+
+                                    </div>
+                                    <div class="group-products__item__footer">
+                                        <div class="group-products__item__footer__col-count">
+                                            <div class="feed-product__quantity">
+                                                <button class="feed-product__quantity__nav"></button>
+                                                <input type="text" readonly value="1"
+                                                       class="feed-product__quantity__val">
+                                                <button class="feed-product__quantity__nav feed-product__quantity__nav--plus"></button>
+                                            </div>
+                                        </div>
+                                        <div class="group-products__item__footer__col-cost">
+                                            <div class="group-products__item__footer__price">
+                                                <div class="feed-product__old-cost">280 ₽</div>
+                                                <div class="feed-product__cost">1800 ₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="page-cart__box__list__item__delete">
+                                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.17 286.17">
+                                        <polygon fill="currentColor"
+                                                points="286.17 30.16 256 0 143.08 112.92 30.16 0 0 30.16 112.92 143.08 0 256 30.16 286.17 143.08 173.25 256 286.17 286.17 256 173.25 143.08 286.17 30.16"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="page-cart__box__list__item feed-product group-products__item">
+                                <div class="page-cart__box__list__item__col-img">
+                                    <a href="" class="group-products__item__images">
+                                        <img src="images/dist/book1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="page-cart__box__list__item__col-desc">
+                                    <div class="group-products__item__top">
+                                        <div class="feed-product__pre-title">ПРЕДЗАКАЗ</div>
+                                        <a href="" class="feed-product__title">
+                                            Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                                        </a>
+                                        <div class="feed-product__sub-title">
+                                            Размер: M, Цвет: Синий
+                                        </div>
+                                        <a href="" class="feed-product__cat-type feed-product__cat-type--print">
+                                            мерч
+                                        </a>
+                                    </div>
+                                    <div class="group-products__item__footer">
+                                        <div class="group-products__item__footer__col-count">
+                                            <div class="feed-product__quantity">
+                                                <button class="feed-product__quantity__nav"></button>
+                                                <input type="text" readonly value="1"
+                                                       class="feed-product__quantity__val">
+                                                <button class="feed-product__quantity__nav feed-product__quantity__nav--plus"></button>
+                                            </div>
+                                        </div>
+                                        <div class="group-products__item__footer__col-cost">
+                                            <div class="group-products__item__footer__price">
+                                                <div class="feed-product__cost">1800 ₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="page-cart__box__list__item__delete">
+                                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.17 286.17">
+                                        <polygon fill="currentColor"
+                                                 points="286.17 30.16 256 0 143.08 112.92 30.16 0 0 30.16 112.92 143.08 0 256 30.16 286.17 143.08 173.25 256 286.17 286.17 256 173.25 143.08 286.17 30.16"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="page-cart__box__list__item feed-product group-products__item">
+                                <div class="page-cart__box__list__item__col-img">
+                                    <a href="" class="group-products__item__images">
+                                        <img src="images/dist/book1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="page-cart__box__list__item__col-desc">
+                                    <div class="group-products__item__top">
+                                        <div class="feed-product__title">
+                                            Открытка "Дружба
+                                        </div>
+
+                                        <a href="" class="feed-product__cat-type feed-product__cat-type--print">
+                                            мерч
+                                        </a>
+                                    </div>
+                                    <div class="group-products__item__footer">
+                                        <div class="group-products__item__footer__col-count">
+                                            1 шт.
+                                        </div>
+                                        <div class="group-products__item__footer__col-cost">
+                                            <div class="feed-product__gift-label">
+                                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                                     viewBox="0 0 512 512">
+                                                    <path fill="#2067fb"
+                                                          d="M448,149.33H381.14A139.65,139.65,0,0,0,426.67,42.67H384c0,61.46-42.05,91.88-88.58,102.4A197.14,197.14,0,0,0,320,64a64,64,0,0,0-128,0,197.14,197.14,0,0,0,24.58,81.07C170.05,134.55,128,104.13,128,42.67H85.33a139.65,139.65,0,0,0,45.53,106.66H64a64,64,0,0,0-64,64v85.34H42.67V512H469.33V298.67H512V213.33A64,64,0,0,0,448,149.33ZM256,42.67A21.33,21.33,0,0,1,277.33,64,164.5,164.5,0,0,1,256,128.28,164.5,164.5,0,0,1,234.67,64,21.33,21.33,0,0,1,256,42.67ZM42.67,213.33A21.33,21.33,0,0,1,64,192H234.67v64h-192Zm42.66,85.34H234.67V469.33H85.33ZM426.67,469.33H277.33V298.67H426.67ZM469.33,256h-192V192H448a21.33,21.33,0,0,1,21.33,21.33Z"/>
+                                                </svg>
+                                                ПОДАРОК
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="alert alert--info mb-20">
+                            При покупке от 2 книг, на третью скидка 50%
+                        </div>
+                        <div class="page-cart__box__coupon">
+                            <form action="" class="page-cart__box__coupon__form">
+                                <input type="text" class="page-cart__box__coupon__form__inp" placeholder="Введите промокод, если он у вас есть">
+                                <button type="submit" class="page-cart__box__coupon__form__submit">ПРИМЕНИТЬ</button>
+                            </form>
+                        </div>
+                        <div class="page-cart__box__scores">
+                            <div class="page-cart__box__scores__header">
+                                <span class="text-uppercase">На вашем счету:</span> 100 баллов
+                            </div>
+                            <div class="form page-cart__box__scores__body">
+                                <label class="form__chekbox">
+                                    <input type="checkbox" value="1" name="a">
+                                    <span class="form__chekbox__value">Оплата баллами</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-cart__box__footer">
+                        <dl class="page-cart__params">
+                            <dt>Товары, 3 шт.</dt>
+                            <dd>1799 ₽</dd>
+
+                            <dt>Скидка</dt>
+                            <dd><span class="color-red">450 ₽</span></dd>
+
+                            <dt>Ваша персональная скидка (10%)</dt>
+                            <dd><span class="color-red">134 ₽</span></dd>
+
+                            <dt>Скидка по промокоду</dt>
+                            <dd>0 ₽
+
+                            <dt>Списано баллов</dt>
+                            <dd>0 ₽</dd>
+
+                            <dt>Вес товаров</dt>
+                            <dd>1 кг</dd>
+                        </dl>
+                        <div class="page-cart__box__footer__result">
+                            <div class="page-cart__box__footer__result__label">
+                                Итого
+                            </div>
+                            <div class="page-cart__box__footer__result__value">
+                                <span class="page-cart__box__footer__result__sale color-red">выгода 584 ₽</span>
+                                <span class="page-cart__box__footer__result__cost">1215 ₽</span>
+                            </div>
+                        </div>
+
+                        <div class="alert alert--info">
+                            Сумма доставки рассчитывается на следующем этапе оформления заказа
+                        </div>
+
+                        <div class="page-cart__box__footer__submit">
+                            <button class="btn btn--blue btn--blue-black h-44 w-27"><span>ОФОРМИТЬ ЗАКАЗ</span></button>
+                        </div>
+
+                        <div class="page-cart__box__footer__info">
+                            <div class="alert alert--info">
+                                Минимальный заказ 250 ₽, после применения всех скидок.
+                                <br>
+                                <br>
+                                Бесплатная доставка по Москве при сумме заказа от 3500 ₽.
+                                <br>
+                                <br>
+                                Накопительная скидка или промокод не распространяется на товары, участвующие в акциях.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-cart__box">
+                    <div class="page-cart__box__header">
+                        <div class="page-cart__box__header__caption">Электронные товары</div>
+                        <div class="page-cart__box__header__count">2</div>
+                    </div>
+                    <div class="page-cart__box__body">
+                        <ul class="nav page-cart__box__list group-products">
+                            <li class="page-cart__box__list__item feed-product group-products__item">
+                                <div class="page-cart__box__list__item__col-img">
+                                    <a href="" class="group-products__item__images">
+                                        <ul class="nav feed-product__labels feed-product__labels--min">
+                                            <li class="feed-product__labels__item feed-product__labels__item--sale">
+                                                <div class="feed-product__labels__item__value">
+                                                    10%
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <img src="images/dist/book1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="page-cart__box__list__item__col-desc">
+                                    <div class="group-products__item__top">
+                                        <a href="" class="feed-product__title">
+                                            Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                                        </a>
+                                        <a href="" class="feed-product__cat-type feed-product__cat-type--e-book">
+                                            ЭЛЕКТРОННАЯ КНИГА
+                                        </a>
+
+                                    </div>
+                                    <div class="group-products__item__footer">
+                                        <div class="group-products__item__footer__col-count">
+                                            <div class="feed-product__quantity">
+                                                <button class="feed-product__quantity__nav"></button>
+                                                <input type="text" readonly value="1"
+                                                       class="feed-product__quantity__val">
+                                                <button class="feed-product__quantity__nav feed-product__quantity__nav--plus"></button>
+                                            </div>
+                                        </div>
+                                        <div class="group-products__item__footer__col-cost">
+                                            <div class="group-products__item__footer__price">
+                                                <div class="feed-product__old-cost">280 ₽</div>
+                                                <div class="feed-product__cost">1800 ₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="page-cart__box__list__item__delete">
+                                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.17 286.17">
+                                        <polygon fill="currentColor"
+                                                 points="286.17 30.16 256 0 143.08 112.92 30.16 0 0 30.16 112.92 143.08 0 256 30.16 286.17 143.08 173.25 256 286.17 286.17 256 173.25 143.08 286.17 30.16"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="page-cart__box__list__item feed-product group-products__item">
+                                <div class="page-cart__box__list__item__col-img">
+                                    <a href="" class="group-products__item__images">
+                                        <img src="images/dist/book1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="page-cart__box__list__item__col-desc">
+                                    <div class="group-products__item__top">
+                                        <a href="" class="feed-product__title">
+                                            Спецвыпуск "Волков. Пекло". Альтернативная обложка
+                                        </a>
+                                        <div class="feed-product__sub-title">
+                                            Размер: M, Цвет: Синий
+                                        </div>
+                                        <a href="" class="feed-product__cat-type feed-product__cat-type--e-book">
+                                            ЭЛЕКТРОННАЯ КНИГА
+                                        </a>
+                                    </div>
+                                    <div class="group-products__item__footer">
+                                        <div class="group-products__item__footer__col-count">
+                                            <div class="feed-product__quantity">
+                                                <button class="feed-product__quantity__nav"></button>
+                                                <input type="text" readonly value="1"
+                                                       class="feed-product__quantity__val">
+                                                <button class="feed-product__quantity__nav feed-product__quantity__nav--plus"></button>
+                                            </div>
+                                        </div>
+                                        <div class="group-products__item__footer__col-cost">
+                                            <div class="group-products__item__footer__price">
+                                                <div class="feed-product__cost">1800 ₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="page-cart__box__list__item__delete">
+                                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.17 286.17">
+                                        <polygon fill="currentColor"
+                                                 points="286.17 30.16 256 0 143.08 112.92 30.16 0 0 30.16 112.92 143.08 0 256 30.16 286.17 143.08 173.25 256 286.17 286.17 256 173.25 143.08 286.17 30.16"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="alert alert--info mb-20">
+                            При покупке от 2 книг, на третью скидка 50%
+                        </div>
+                        <div class="page-cart__box__coupon">
+                            <form action="" class="page-cart__box__coupon__form">
+                                <input type="text" class="page-cart__box__coupon__form__inp" placeholder="Введите промокод, если он у вас есть">
+                                <button type="submit" class="page-cart__box__coupon__form__submit">ПРИМЕНИТЬ</button>
+                            </form>
+                        </div>
+                        <div class="page-cart__box__scores">
+                            <div class="page-cart__box__scores__header">
+                                <span class="text-uppercase">На вашем счету:</span> 100 баллов
+                            </div>
+                            <div class="form page-cart__box__scores__body">
+                                <label class="form__chekbox">
+                                    <input type="checkbox" value="1" name="a">
+                                    <span class="form__chekbox__value">Оплата баллами</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-cart__box__footer">
+                        <dl class="page-cart__params">
+                            <dt>Товары, 3 шт.</dt>
+                            <dd>1799 ₽</dd>
+
+                            <dt>Скидка</dt>
+                            <dd><span class="color-red">450 ₽</span></dd>
+
+                            <dt>Ваша персональная скидка (10%)</dt>
+                            <dd><span class="color-red">134 ₽</span></dd>
+
+                            <dt>Скидка по промокоду</dt>
+                            <dd>0 ₽
+
+                            <dt>Списано баллов</dt>
+                            <dd>0 ₽</dd>
+
+                            <dt>Вес товаров</dt>
+                            <dd>1 кг</dd>
+                        </dl>
+                        <div class="page-cart__box__footer__result">
+                            <div class="page-cart__box__footer__result__label">
+                                Итого
+                            </div>
+                            <div class="page-cart__box__footer__result__value">
+                                <span class="page-cart__box__footer__result__sale color-red">выгода 584 ₽</span>
+                                <span class="page-cart__box__footer__result__cost">1215 ₽</span>
+                            </div>
+                        </div>
+
+                        <div class="alert alert--info">
+                            Сумма доставки рассчитывается на следующем этапе оформления заказа
+                        </div>
+
+                        <div class="page-cart__box__footer__submit">
+                            <button class="btn btn--blue btn--blue-black h-44 w-27"><span>ОФОРМИТЬ ЗАКАЗ</span></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-cart__body">
+                <div class="page-cart__box">
+                    <div class="page-cart__box__header">
+                        <div class="page-cart__box__header__caption">Товары</div>
+                        <div class="page-cart__box__header__count page-cart__box__header__count--empty">0</div>
+                    </div>
+                    <div class="page-cart__box__empty">
+                        <p>В корзине отсутствуют физические товары.</p>
+                        <img width="272" height="257" src="images/dist/empty-cart.jpg" srcset="images/dist/empty-cart@2.jpg 2x" alt="">
+                    </div>
+                </div>
+                <div class="page-cart__box">
+                    <div class="page-cart__box__header">
+                        <div class="page-cart__box__header__caption">Электронные товары</div>
+                        <div class="page-cart__box__header__count page-cart__box__header__count--empty">0</div>
+                    </div>
+                    <div class="page-cart__box__empty">
+                        <p>В корзине отсутствуют электронные товары.</p>
+                        <img width="272" height="257" src="images/dist/empty-cart.jpg" srcset="images/dist/empty-cart@2.jpg 2x" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->

@@ -1,0 +1,54 @@
+<!--#set var="title" value="Вакансии" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="wrapper">
+    <div class="breadcrumbs">
+        <ol class="breadcrumbs__list nav" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="itemscope"
+                itemtype="https://schema.org/ListItem"
+                class="breadcrumbs__item">
+                <a href="/" itemprop="item">
+                    <span itemprop="name">Главная</span>
+                </a>
+                <meta itemprop="position" content="1">
+            </li>
+            <li itemprop="itemListElement" itemscope="itemscope"
+                itemtype="https://schema.org/ListItem" class="breadcrumbs__item">
+                <span ditemprop="name">Вакансии</span>
+                <meta itemprop="position" content="2">
+            </li>
+        </ol>
+    </div>
+
+    <div class="row fpad50">
+        <div class="col-lg-7 col-mob-12 tpad20">
+            <div class="refund-top-text fpad30">
+                <h1 class="title-h1">ВАКАНСИИ</h1>
+                <p>Извините. Но на данный момент у нас нет открытых вакансий.</p>
+            </div>
+            <div class="text">
+                <p>Если Вы хотите работать в нашей компании и считаете, что Ваши навыки и качества могут заинтересовать
+                нас, отправьте свое резюме на электронную почту <a href="mailto:ob@bubble.ru">job@bubble.ru</a>.</p>
+
+                <p>Мы обязательно его рассмотрим и, если оно нам покажется интересным, при появлении новых вакансий
+                обязательно свяжемся с Вами.</p>
+            </div>
+            <div class="mob-img tpad10">
+                <img class="align-center" src="images/dist/jobs.jpg" alt="" width="178" height="200">
+            </div>
+        </div>
+        <div class="col-lg-5 hidden-mob">
+            <picture>
+                <source  srcset="images/dist/jobs@2.jpg 2x, images/dist/jobs.jpg 1x">
+                <img class="align-center" src="images/dist/jobs.jpg" alt="" width="470" height="527">
+            </picture>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+<script>
+    new Accordion('.accordion-container');
+</script>
+
+<!--#include virtual="/parts/footer.html" -->
