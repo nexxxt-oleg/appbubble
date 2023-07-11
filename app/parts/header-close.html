@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title><!--#echo var="title" --></title>
+    <meta name="description" content="">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<div class="main">
+    <header class="header">
+        <div class="header__top">
+            <div class="wrapper d-flex flex-wrap">
+                <div class="header__top__left">
+                    <a href="" class="header__top__close">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20">
+                            <path fill="currentColor"
+                                  d="M341.33,170.67a21.32,21.32,0,0,0-30.16,0L256,225.83l-55.17-55.16a21.33,21.33,0,0,0-30.16,30.16L225.83,256l-55.16,55.17a21.33,21.33,0,0,0,30.16,30.16L256,286.17l55.17,55.16a21.33,21.33,0,0,0,30.16-30.16L286.17,256l55.16-55.17A21.32,21.32,0,0,0,341.33,170.67Z"/>
+                            <path fill="currentColor"
+                                  d="M256,0C114.62,0,0,114.62,0,256S114.62,512,256,512,512,397.38,512,256,397.32.15,256,0Zm0,469.33C138.18,469.33,42.67,373.82,42.67,256S138.18,42.67,256,42.67,469.33,138.18,469.33,256,373.77,469.2,256,469.33Z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="header__top__center">
+
+                </div>
+
+                <div class="header__top__right">
+
+                </div>
+            </div>
+            <div class="header__top__box-menu " id="topNav">
+                <div class="wrapper">
+                    <div class="header__top__nav-wrap header__top__nav-wrap--menu1 active" id="menuLevel1">
+                        <div class="header__top__nav-wrap__mob">
+                            <ul class="nav header__top__nav">
+                                <li class="header__top__nav__item">
+                                    <a class="nav__link"
+                                       onclick="document.getElementById('menuLevel1').classList.remove('active'); document.getElementById('menuLevel2').classList.add('active');return false;"
+                                    >
+                                        ЭЛЕКТРОННЫЕ комиксы
+                                        <svg width="7" height="12" class="ico">
+                                            <use xlink:href="#svg-right"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="header__top__nav__item">
+                                    <a class="nav__link" href="">
+                                        ПЕЧАТНЫЕ комиксы
+                                        <svg width="7" height="12" class="ico">
+                                            <use xlink:href="#svg-right"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="header__top__nav__item">
+                                    <a class="nav__link" href="">
+                                        МЕРЧ
+                                    </a>
+                                </li>
+                                <li class="header__top__nav__item">
+                                    <a class="nav__link" href="">
+                                        ЖАНРЫ
+                                        <svg width="7" height="12" class="ico">
+                                            <use xlink:href="#svg-right"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="header__top__nav__item">
+                                    <a class="nav__link" href="">
+                                        ГЕРОИ
+                                    </a>
+                                </li>
+                                <li class="header__top__nav__item">
+                                    <a class="nav__link" href="">
+                                        НОВОСТИ
+                                    </a>
+                                </li>
+                                <li class="header__top__nav__item">
+                                    <a class="nav__link" href="">
+                                        КИНО
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__top__nav-wrap__list">
+                            <ul class="nav header__top__nav header__top__nav--col1">
+                                <li class="header__top__nav__item"><a href="" class="nav__link">Где купить?</a></li>
+                                <li class="header__top__nav__item"><a href="" class="nav__link">Оплата</a></li>
+                                <li class="header__top__nav__item"><a href="" class="nav__link">Доставка</a></li>
+                                <li class="header__top__nav__item"><a href="" class="nav__link">Возврат и обмен</a></li>
+                            </ul>
+                            <ul class="nav header__top__nav header__top__nav--col2">
+                                <li class="header__top__nav__item"><a href="" class="nav__link">О нас</a></li>
+                                <li class="header__top__nav__item"><a href="" class="nav__link">Контакты</a></li>
+                                <li class="header__top__nav__item"><a href="" class="nav__link">Партнерам</a></li>
+                                <li class="header__top__nav__item"><a href="" class="nav__link">Вакансии</a></li>
+                            </ul>
+                            <ul class="nav header__top__nav header__top__nav--col3">
+                                <li class="header__top__nav__item"><a href="" class="nav__link">Программа лояльности</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__top__nav-level2" id="menuLevel2">
+                        <div class="header__top__nav-caption header__top__nav__item active">
+                            <a class="nav__link"
+                               onclick="document.getElementById('menuLevel1').classList.add('active'); document.getElementById('menuLevel2').classList.remove('active'); return false;"
+                            >
+                                <div class="header__top__nav-caption__label">
+                                    <svg width="20" height="20" class="ico ico--left">
+                                        <use xlink:href="#svg-back"></use>
+                                    </svg>
+                                    ЭЛЕКТРОННЫЕ комиксы
+                                </div>
+
+                                <svg width="7" height="12" class="ico ico--right">
+                                    <use xlink:href="#svg-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="nav header__top__nav">
+                            <li class="header__top__nav__item">
+                                <a class="nav__link"
+                                   onclick="document.getElementById('menuLevel2').classList.remove('active');document.getElementById('menuLevel3').classList.add('active');return false;"
+                                >
+                                    ВСЕЛЕННАЯ BUBBLE
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__top__nav__item">
+                                <a class="nav__link" href="">
+                                    МАНГА
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__top__nav__item">
+                                <a class="nav__link" href="">
+                                    Детские комиксы
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__top__nav__item">
+                                <a class="nav__link" href="">
+                                    Авторские комиксы
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__top__nav__item">
+                                <a class="nav__link" href="">
+                                    Легенды BUBBLE
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <!--li class="header__top__nav__item">
+                                <a class="nav__link" href="" >
+                                    Бесплатные комиксы
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li-->
+                        </ul>
+
+                    </div>
+                    <div class="header__top__nav-level2" id="menuLevel3">
+                        <div class="header__top__nav-caption header__top__nav__item active">
+                            <a class="nav__link"
+                               onclick="document.getElementById('menuLevel2').classList.add('active');document.getElementById('menuLevel3').classList.remove('active');return false;"
+                            >
+                                <div class="header__top__nav-caption__label">
+                                    <svg width="20" height="20" class="ico ico--left">
+                                        <use xlink:href="#svg-back"></use>
+                                    </svg>
+                                    ВСЕЛЕННАЯ BUBBLE
+                                </div>
+
+                                <svg width="7" height="12" class="ico ico--right">
+                                    <use xlink:href="#svg-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="nav header__top__nav">
+                            <li class="header__top__nav__item">
+                                <a class="nav__link nav__link--normal" href=""
+                                   onclick="document.getElementById('menuLevel4').classList.add('active');document.getElementById('menuLevel3').classList.remove('active');return false;">
+                                    Майор Гром
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__top__nav__item">
+                                <a class="nav__link nav__link--normal" href="">
+                                    Чумной Доктор
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__top__nav__item">
+                                <a class="nav__link nav__link--normal" href="">
+                                    МАНГА
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__top__nav__item">
+                                <a class="nav__link nav__link--normal" href="">
+                                    Экслибриум
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__top__nav__item">
+                                <a class="nav__link nav__link--normal" href="">
+                                    Метеора
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__top__nav__item">
+                                <a class="nav__link nav__link--normal" href="">
+                                    Бесобой
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__top__nav__item">
+                                <a class="nav__link nav__link--normal" href="">
+                                    Красная Фурия
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__top__nav__item">
+                                <a class="nav__link nav__link--normal" href="">
+                                    Инок
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__top__nav__item">
+                                <a class="nav__link nav__link--normal" href="">
+                                    МИР
+                                    <svg width="7" height="12" class="ico ico--right">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header__top__nav-level2" id="menuLevel4">
+                        <div class="header__top__nav-caption header__top__nav__item active">
+                            <a class="nav__link"
+                               onclick="document.getElementById('menuLevel3').classList.add('active');document.getElementById('menuLevel4').classList.remove('active');return false;"
+                            >
+                                <div class="header__top__nav-caption__label">
+                                    <svg width="20" height="20" class="ico ico--left">
+                                        <use xlink:href="#svg-back"></use>
+                                    </svg>
+                                    МАЙОР ГРОМ
+                                </div>
+
+                                <svg width="7" height="12" class="ico ico--right">
+                                    <use xlink:href="#svg-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="header__nav__submenu__lavel-card">
+                            <ul class="nav header__nav__submenu__cards header__nav__submenu__cards--mob">
+                                <li class="header__nav__submenu__cards__item">
+                                    <a href="" class="product-card product-card--mob-series">
+                                        <div class="series-item__wrap">
+                                            <img class="series-item__pic" src="images/dist/series@2.jpg" alt="">
+                                            <div class="series-item__logo">
+                                                <img src="images/dist/series-logo.png" alt="">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__nav__submenu__cards__item">
+                                    <a href="" class="product-card product-card--mob-series">
+                                        <div class="series-item__wrap">
+                                            <img class="series-item__pic" src="images/dist/series@2.jpg" alt="">
+                                            <div class="series-item__logo">
+                                                <img src="images/dist/series-logo.png" alt="">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__nav__submenu__cards__item">
+                                    <a href="" class="product-card product-card--mob-series">
+                                        <div class="series-item__wrap">
+                                            <img class="series-item__pic" src="images/dist/series@2.jpg" alt="">
+                                            <div class="series-item__logo">
+                                                <img src="images/dist/series-logo.png" alt="">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="header__nav__submenu__footer">
+                                <ul class="header__nav__submenu__footer__tags nav nav--tags">
+                                    <li><a href="" class="age-rating">16+</a></li>
+                                    <li><a href="">Детектив</a></li>
+                                    <li><a href="">Боевик</a></li>
+                                    <li><a href="">Экшен</a></li>
+                                    <li><a href="">Юмор</a></li>
+                                </ul>
+                                <div class="header__nav__submenu__footer__description">
+                                    <p>Майор Гром – это увлекательная история с начинкой из интригующего
+                                        детектива с примесью боевика и яркой картинкой. Преступления разных
+                                        мастей, гениальные и поистине пугающие злодеи, прекрасные сильные
+                                        девушки, драки и погони на улицах Санкт-Петербурга и, конечно,
+                                        неизменный юмор, сопутствующий любому делу майора Грома, – всё это (и не
+                                        только) можно найти на страницах данной серии. </p>
+                                </div>
+                                <ul class="nav nav--faq">
+                                    <li><a href="">Как читать наши комиксы</a></li>
+                                    <li><a href="">Авторы</a></li>
+                                    <li><a href="">Герои</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="header__top__box-menu " id="topNavUser">
+                <div class="wrapper">
+                    <a href="" class="mob-menu-close">
+                        <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.17 286.17">
+                            <polygon fill="currentColor"
+                                     points="286.17 30.16 256 0 143.08 112.92 30.16 0 0 30.16 112.92 143.08 0 256 30.16 286.17 143.08 173.25 256 286.17 286.17 256 173.25 143.08 286.17 30.16"></polygon>
+                        </svg>
+                    </a>
+                    <div class="header__top__nav-wrap header__top__nav-wrap--menu2 account-menu">
+                        <div class="account-menu__left">
+                            <a href="" class="account-menu__user">
+                                <div class="account-menu__user__ava">
+                                    <img src="images/dist/ava2.png" alt="">
+                                </div>
+                                <div class="account-menu__user__info">
+                                    <div class="account-menu__user__name">
+                                        Космодемьянский Александр
+                                        Анатольевич
+                                    </div>
+                                    <div class="account-menu__user__position">
+                                        Знаток
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="account-menu__bonus">
+                                <div class="account-menu__bonus__item">
+                                    <div class="account-menu__bonus__item__value">
+                                        <svg class="ico" width="24" height="24">
+                                            <use xlink:href="#svg-sale"></use>
+                                        </svg>
+                                        Скидка 0%
+                                    </div>
+                                    <div class="account-menu__bonus__item__desc">
+                                        <b>7 000 ₽</b> до следующего уровня
+                                    </div>
+                                </div>
+                                <div class="account-menu__bonus__item">
+                                    <div class="account-menu__bonus__item__value">
+                                        <svg class="ico" width="24" height="24">
+                                            <use xlink:href="#svg-scores"></use>
+                                        </svg>
+                                        1 000 000 баллов
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="account-menu__right">
+                            <ul class="nav account-menu__card">
+                                <li class="account-menu__card__item">
+                                    <a href="" class="account-menu__card__item__link">
+                                        <div class="account-menu__card__item__header">
+                                            <div class="account-menu__card__item__ico">
+                                                <svg class="ico" width="24" height="24">
+                                                    <use xlink:href="#svg-ac-orders"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="account-menu__card__item__footer">
+                                            <div class="account-menu__card__item__caption">
+                                                Мои покупки
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="account-menu__card__item">
+                                    <a href="" class="account-menu__card__item__link">
+                                        <div class="account-menu__card__item__header">
+                                            <div class="account-menu__card__item__ico">
+                                                <svg class="ico" width="24" height="24">
+                                                    <use xlink:href="#svg-ac-library"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="account-menu__card__item__footer">
+                                            <div class="account-menu__card__item__caption">
+                                                Моя библиотека
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="account-menu__card__item">
+                                    <a href="" class="account-menu__card__item__link">
+                                        <div class="account-menu__card__item__header">
+                                            <div class="account-menu__card__item__ico">
+                                                <svg class="ico" width="23" height="24">
+                                                    <use xlink:href="#svg-ac-notifications"></use>
+                                                </svg>
+                                                <span class="info-count">100</span>
+                                            </div>
+                                        </div>
+                                        <div class="account-menu__card__item__footer">
+                                            <div class="account-menu__card__item__caption">
+                                                Уведомления
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="account-menu__card__item">
+                                    <a href="" class="account-menu__card__item__link">
+                                        <div class="account-menu__card__item__header">
+                                            <div class="account-menu__card__item__ico">
+                                                <svg class="ico" width="24" height="24">
+                                                    <use xlink:href="#svg-ac-progress"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="account-menu__card__item__footer">
+                                            <div class="account-menu__card__item__caption">
+                                                Мои достижения
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="account-menu__card__item">
+                                    <a href="" class="account-menu__card__item__link">
+                                        <div class="account-menu__card__item__header">
+                                            <div class="account-menu__card__item__ico">
+                                                <svg class="ico" width="18" height="24">
+                                                    <use xlink:href="#svg-ac-certificate"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="account-menu__card__item__footer">
+                                            <div class="account-menu__card__item__caption">
+                                                Сертификаты и
+                                                промокоды
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="account-menu__card__item">
+                                    <a href="" class="account-menu__card__item__link">
+                                        <div class="account-menu__card__item__header">
+                                            <div class="account-menu__card__item__ico">
+                                                <svg class="ico" width="24" height="24">
+                                                    <use xlink:href="#svg-ac-bonus"></use>
+                                                </svg>
+                                                <span class="info-count">2</span>
+                                            </div>
+                                        </div>
+                                        <div class="account-menu__card__item__footer">
+                                            <div class="account-menu__card__item__caption">
+                                                Бонусы и подарки
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="account-menu__card__item">
+                                    <a href="" class="account-menu__card__item__link">
+                                        <div class="account-menu__card__item__header">
+                                            <div class="account-menu__card__item__ico">
+                                                <svg class="ico" width="24" height="24">
+                                                    <use xlink:href="#svg-ac-sharing"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="account-menu__card__item__footer">
+                                            <div class="account-menu__card__item__caption">
+                                                Пригласить друзей
+                                            </div>
+                                            <div class="account-menu__card__item__text">
+                                                Получайте приятные
+                                                бонусы!
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="account-menu__left-nav">
+                            <ul class="nav account-menu__setting">
+                                <li class="account-menu__setting__item">
+                                    <a href="">Мой профиль</a>
+                                </li>
+                                <li class="account-menu__setting__item">
+                                    <a href="">Настройки уведомлений</a>
+                                </li>
+                                <li class="account-menu__setting__item">
+                                    <a href="">Помощь</a>
+                                </li>
+                                <li class="account-menu__setting__item">
+                                    <a href="">Выйти</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__toolbar">
+            <div class="wrapper">
+                <ul class="nav header__top__right__nav">
+                    <li>
+                        <a href="" class="header__top__fav">
+                            <span class="header__top__fav__count info-count">2</span>
+                            <svg class="icon" width="24" height="23">
+                                <use xlink:href="#svg-fav"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="header__top__cart">
+                            <span class="header__top__cart__count info-count">1</span>
+                            <svg class="icon" width="24" height="24">
+                                <use xlink:href="#svg-cart"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="header__top__ebook">
+                            <svg class="icon" width="24" height="22">
+                                <use xlink:href="#svg-ebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="header__top__search">
+                            <svg class="icon" width="24" height="24">
+                                <use xlink:href="#svg-search"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <!--если не авторизован-->
+                        <!--a href="" class="header__top__enter">
+                            <span>ВОЙТИ</span>
+                            <svg width="24" height="24" class="header__top__enter__mob-ico">
+                                <use xlink:href="#svg-sing-in"></use>
+                            </svg>
+                        </a-->
+
+                        <!--если авторизован-->
+                        <a href="" class="header__top__ava"
+                           onclick="document.getElementById('topNavUser').classList.toggle('active');return false;">
+                            <img src="images/dist/ava.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>

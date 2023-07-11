@@ -892,7 +892,10 @@
 .header__top__left,
 .header__top__right {
   height: 45px;
-  width: 30px;
+  width: 80px;
+}
+.header__top__left {
+  justify-content: flex-end;
 }
 .header__top__logo {
   height: 45px;
@@ -962,4 +965,32 @@
   &:active {
     color: #fff;
   }
+}
+.nav--tags-white a:hover {
+  opacity: .8;
+  color: #fff !important;
+}
+
+.header__top__back {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  font-family: "PT Sans Narrow";
+  text-transform: uppercase;
+  svg {
+    margin-right: 10px;
+  }
+
+}
+
+.dropdown.active {
+  z-index: 100;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
 }

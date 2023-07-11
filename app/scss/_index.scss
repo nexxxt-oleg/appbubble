@@ -568,7 +568,7 @@ body {
     }
   }
 
-  &:hover {
+  &.active {
     .dropdown__body {
       opacity: 1;
       visibility: visible;
