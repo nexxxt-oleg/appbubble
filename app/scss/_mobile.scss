@@ -116,6 +116,10 @@
     font-size: 50px;
   }
 
+  .page-ebook {
+    padding-top: 15px;
+  }
+
   .index-slider__item__btn {
     display: none;
   }
@@ -458,9 +462,7 @@
   .page-ebook__covers__col {
     width: 100%;
   }
-  .page-ebook {
-    padding-top: 0;
-  }
+
   .breadcrumbs {
     padding-top: 15px;
     padding-bottom: 10px;
@@ -1171,6 +1173,11 @@
     &__search {
       width: 100%;
     }
+  }
+
+  .page-ebook__col-img {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
   .mob-w-50 {
@@ -3587,6 +3594,13 @@
   .page-top-filter__dropdown-right.dropdown {
     .dropdown__header {
       width: 210px;
+    }
+  }
+  .mob-col-6 {
+    .dropdown {
+      .dropdown__header {
+        width: 100%;
+      }
     }
   }
 }

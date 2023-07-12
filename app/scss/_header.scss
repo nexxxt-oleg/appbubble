@@ -55,7 +55,7 @@
 
     &__right {
       align-items: center;
-      justify-content: flex-end;
+     /* justify-content: flex-end;*/
 
       &__nav {
         align-items: center;
@@ -64,6 +64,7 @@
           color: #8d8d8d;
           position: relative;
           text-decoration: none;
+
           &:active,
           &:hover {
             color: #fff;
@@ -211,6 +212,7 @@
           background: #2067fb;
           transition: all 0.3s ease-in-out;
         }
+
         &.active::after {
           width: 100%;
         }
@@ -230,6 +232,7 @@
           }
         }
       }
+
       &:hover {
         & > a {
           &::after {
@@ -246,9 +249,11 @@
     z-index: 2;
   }
 }
+
 .header__nav__submenu {
   transition: all 0.1s ease-in-out;
 }
+
 .header__top__nav-wrap--menu1 {
   padding-top: 0;
   position: relative;
@@ -264,31 +269,39 @@
     }
   }
 }
+
 .header__top__nav-wrap__mob {
   display: block !important;
 }
+
 .header__top__nav-wrap__list {
   display: block;
   width: 100%;
 }
+
 .header__top__nav-wrap--menu1 {
   min-height: auto;
   padding-top: 0;
 }
+
 .header__top__box-menu.active {
   z-index: 9999;
 }
+
 .header__top__box-menu {
   overflow-y: auto;
   visibility: hidden;
 }
+
 .header__top__nav__item {
   border-bottom: 1px solid #d1d1d1;
   padding-bottom: 0;
 }
+
 .header__top__nav-level2.active {
   display: block;
 }
+
 .header__top__nav-caption__label {
   display: flex;
   align-items: center;
@@ -300,15 +313,19 @@
     margin-right: 10px;
   }
 }
+
 .ico--right {
   transition: all 0.2s ease-in-out;
 }
+
 .header__top__nav__item.active > .nav__link > .ico--right {
   transform: rotate(90deg);
 }
+
 .nav__link:after {
   display: none !important;
 }
+
 .nav__link.nav__link--normal {
   text-transform: none !important;
 }
@@ -453,12 +470,14 @@
     }
   }
 }
+
 @media (min-width: 701px) {
   .header__top__locale:hover .header__top__locale__list {
     opacity: 1;
     visibility: visible;
   }
 }
+
 @media (max-width: 700px) {
   .header__top__locale__list.open {
     opacity: 1;
@@ -781,37 +800,46 @@
   width: 270px;
   flex-grow: 1;
 }
+
 .header__nav__submenu__cards {
   padding-bottom: 20px;
+
   &__item {
     padding: 0 0 20px 30px;
   }
+
   &--col3 {
     .header__nav__submenu__cards__item {
       width: 33.33%;
     }
   }
+
   &--col6 {
     .header__nav__submenu__cards__item {
       width: 16.6667%;
     }
   }
+
   &--ml {
     margin-left: -30px;
     padding-bottom: 0 !important;
   }
 }
+
 .header__nav__submenu__footer {
   padding-left: 30px;
   padding-bottom: 50px;
+
   &__tags {
     padding-bottom: 25px;
   }
+
   &__description {
     font-size: 14px;
     line-height: 24px;
     color: #1a1a1a;
     padding-bottom: 40px;
+
     p {
       font-size: 14px;
       line-height: 24px;
@@ -820,24 +848,29 @@
     }
   }
 }
+
 .header__top__fav:hover .icon,
 .header__top__cart:hover .icon,
 .header__top__ebook:hover .icon {
   color: #a3a3a3;
 }
+
 .swiper-button-prev,
 .swiper-button-next {
   transition: all 0.2s ease-in-out;
 }
+
 /*.swiper-button-prev:hover {
   transform: translate(-2px, -2px);
 }*/
 .swiper-button-prev:hover .swiper__nav::after {
   transform: translate(2px, 2px);
 }
+
 .swiper-button-next:hover .swiper__nav::after {
   transform: translate(-2px, 2px);
 }
+
 /*.swiper-button-next:hover {
   transform: translate(2px, -2px);
 }*/
@@ -847,6 +880,7 @@
 .header__top__enter__mob-ico {
   display: none;
 }
+
 .account-menu__setting__item a:hover {
   color: #fff;
 }
@@ -854,21 +888,26 @@
 .header__nav__submenu__cards__item .series-item__logo img {
   max-width: 100%;
 }
+
 .header__nav__submenu__cards__item .series-item__logo {
   padding: 20px;
 }
+
 .ff-narrow {
   font-family: "PT Sans Narrow";
 }
+
 .account-close {
   display: flex;
   justify-content: flex-end;
+
   a {
     display: block;
     color: #fff;
     padding: 5px;
   }
 }
+
 .header__toolbar {
 
   background: #1a1a1a;
@@ -878,28 +917,42 @@
   padding: 7px 0;
   position: fixed;
   right: 0;
- .nav {
-   justify-content: space-between;
- }
+
+  .nav {
+    justify-content: space-between;
+  }
 }
 
-.header__top>.d-flex {
+.header__top > .d-flex {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
+
 .header__top__left,
 .header__top__right {
   height: 45px;
   width: 80px;
 }
+
 .header__top__left {
   justify-content: flex-end;
+  align-items: center;
+
+  .header__top__close {
+    color: #fff;
+    text-decoration: none;
+  }
 }
+.header__top__back {
+  margin-right: auto;
+}
+
 .header__top__logo {
   height: 45px;
 }
+
 .header__top__toggle-menu {
   height: 45px;
   padding: 5px;
@@ -909,15 +962,19 @@
 .header__top__right {
   margin-left: -10px;
 }
+
 .header__top__left {
   margin-right: -10px;
 }
+
 #topNav {
   height: calc(100vh - 95px);
 }
+
 .header__top__box-menu.active {
   margin-top: 0;
 }
+
 .header__top__box-menu {
   background-color: #fff;
 
@@ -932,6 +989,7 @@
   border-top: 1px solid #393939;
   margin: 20px 0 30px;
   position: relative;
+
   &__active {
     display: flex;
     padding: 10px 30px 10px 0;
@@ -940,10 +998,12 @@
     background-repeat: no-repeat;
     background-size: 7px 3px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 298.67 140.5'%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Слой_1-2' data-name='Слой 1'%3E%3Cg id='_01_align_center' data-name=' 01 align center'%3E%3Cpath fill='%23929292' d='M0,0H298.67L164.42,134.25a21.34,21.34,0,0,1-30.17,0Z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
     img {
       border-radius: 12px;
       display: block;
     }
+
     span {
       display: block;
       font-size: 14px;
@@ -953,6 +1013,7 @@
     }
   }
 }
+
 .account-menu__cache {
   display: flex;
   justify-content: center;
@@ -962,10 +1023,12 @@
   font-size: 12px;
   line-height: 1.2;
   text-decoration: none;
+
   &:active {
     color: #fff;
   }
 }
+
 .nav--tags-white a:hover {
   opacity: .8;
   color: #fff !important;
@@ -981,6 +1044,7 @@
   line-height: 14px;
   font-family: "PT Sans Narrow";
   text-transform: uppercase;
+
   svg {
     margin-right: 10px;
   }
@@ -993,4 +1057,23 @@
 
 .flex-grow-1 {
   flex-grow: 1;
+}
+
+.group-products__item__images--hero-bg {
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: url("../images/dist/bg-min-hero.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  img {
+    max-width: 100%;
+    height:auto;
+    max-height: 100%;
+    width: auto;
+  }
+}
+.page-ebook__covers__item {
+  display: block;
+  text-decoration: none;
 }

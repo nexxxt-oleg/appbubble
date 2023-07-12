@@ -34,14 +34,17 @@
                 </div>
 
                 <div class="header__top__center">
-                    <a href="" class="header__top__logo">
-                        <svg width="140" height="42">
-                            <use xlink:href="#svg-logo"></use>
-                        </svg>
-                    </a>
+
                 </div>
 
-                <div class="header__top__right"></div>
+                <div class="header__top__right">
+                    <a href="" class="header__top__back">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20">
+                            <path fill="currentColor" d="M512,256C512,114.62,397.38,0,256,0S0,114.62,0,256,114.62,512,256,512,511.85,397.32,512,256ZM42.67,256C42.67,138.18,138.18,42.67,256,42.67S469.33,138.18,469.33,256,373.82,469.33,256,469.33,42.8,373.77,42.67,256Zm218.51,90.52L231,376.68,140.5,286.17a42.69,42.69,0,0,1,0-60.34L231,135.32l30.16,30.16L192,234.67H384v42.66H192Z"/>
+                        </svg>
+                        <span>НАЗАД</span>
+                    </a>
+                </div>
             </div>
             <div class="header__top__box-menu " id="topNav">
                 <div class="wrapper">
@@ -602,32 +605,8 @@
         </div>
     </header>
 
-<div class="wrapper">
-    <div class="breadcrumbs">
-        <ol class="breadcrumbs__list nav" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
-            <li itemprop="itemListElement" itemscope="itemscope"
-                itemtype="https://schema.org/ListItem"
-                class="breadcrumbs__item">
-                <a href="/" itemprop="item">
-                    <span itemprop="name">Главная</span>
-                </a>
-                <meta itemprop="position" content="1">
-            </li>
-            <li itemprop="itemListElement" itemscope="itemscope"
-                itemtype="https://schema.org/ListItem"
-                class="breadcrumbs__item">
-                <a href="/" itemprop="item">
-                    <span itemprop="name">Электронные комиксы</span>
-                </a>
-                <meta itemprop="position" content="2">
-            </li>
-            <li itemprop="itemListElement" itemscope="itemscope"
-                itemtype="https://schema.org/ListItem" class="breadcrumbs__item">
-                <span ditemprop="name">Майор Гром</span>
-                <meta itemprop="position" content="3">
-            </li>
-        </ol>
-    </div>
+<div class="wrapper fpad50">
+
     <div class="page-ebook">
         <div class="row ">
             <div class="col-lg-6 page-ebook__col-img">
@@ -698,12 +677,12 @@
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
-                        <div class="page-ebook__images__video">
+                        <!--div class="page-ebook__images__video">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/rA2e2zmIM3g"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
-                        </div>
+                        </div-->
                     </div>
                     <div class="page-ebook__labels ">
                         <ul class="nav feed-product__labels feed-product__labels--not-mob">
@@ -802,7 +781,7 @@
                         </div>
                         <div class="row page-ebook__covers__list">
                             <div class="col-lg-6 page-ebook__covers__col">
-                                <div class="page-ebook__covers__item active">
+                                <a href="" class="page-ebook__covers__item active">
                                     <div class="page-ebook__covers__item__wrap">
                                         <div class="page-ebook__covers__item__img">
                                             <img src="images/dist/lot1_min.jpg" alt=""/>
@@ -812,10 +791,10 @@
                                             красивым названием
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-lg-6 page-ebook__covers__col">
-                                <div class="page-ebook__covers__item">
+                                <a href="" class="page-ebook__covers__item">
                                     <div class="page-ebook__covers__item__wrap">
                                         <div class="page-ebook__covers__item__img">
                                             <img src="images/dist/lot1_min.jpg" alt=""/>
@@ -825,10 +804,10 @@
                                             обложка
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-lg-6 page-ebook__covers__col">
-                                <div class="page-ebook__covers__item">
+                                <a href="" class="page-ebook__covers__item">
                                     <div class="page-ebook__covers__item__wrap">
                                         <div class="page-ebook__covers__item__img">
                                             <img src="images/dist/lot1_min.jpg" alt=""/>
@@ -838,10 +817,10 @@
                                             обложка
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-lg-6 page-ebook__covers__col">
-                                <div class="page-ebook__covers__item">
+                                <a href="" class="page-ebook__covers__item">
                                     <div class="page-ebook__covers__item__wrap">
                                         <div class="page-ebook__covers__item__img">
                                             <img src="images/dist/lot1_min.jpg" alt=""/>
@@ -851,7 +830,7 @@
                                             обложка
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -2149,8 +2128,8 @@
                             <div class="col-lg-6">
                                 <a href="" class="group-products__item feed-product feed-product--hero">
                                     <div class="group-products__item__col-img">
-                                        <div class="group-products__item__images">
-                                            <img src="images/dist/her-grom.jpg" alt="">
+                                        <div class="group-products__item__images group-products__item__images--hero-bg">
+                                            <img src="images/dist/her-grom.png" alt="">
                                         </div>
                                     </div>
                                     <div class="group-products__item__col-desc">
@@ -2163,8 +2142,8 @@
                             <div class="col-lg-6">
                                 <a href="" class="group-products__item feed-product feed-product--hero">
                                     <div class="group-products__item__col-img">
-                                        <div class="group-products__item__images">
-                                            <img src="images/dist/her-grom.jpg" alt="">
+                                        <div class="group-products__item__images group-products__item__images--hero-bg">
+                                            <img src="images/dist/her-grom.png" alt="">
                                         </div>
                                     </div>
                                     <div class="group-products__item__col-desc">
@@ -2177,8 +2156,8 @@
                             <div class="col-lg-6">
                                 <a href="" class="group-products__item feed-product feed-product--hero">
                                     <div class="group-products__item__col-img">
-                                        <div class="group-products__item__images">
-                                            <img src="images/dist/her-grom.jpg" alt="">
+                                        <div class="group-products__item__images group-products__item__images--hero-bg">
+                                            <img src="images/dist/her-grom.png" alt="">
                                         </div>
                                     </div>
                                     <div class="group-products__item__col-desc">
@@ -2191,8 +2170,8 @@
                             <div class="col-lg-6">
                                 <a href="" class="group-products__item feed-product feed-product--hero">
                                     <div class="group-products__item__col-img">
-                                        <div class="group-products__item__images">
-                                            <img src="images/dist/her-grom.jpg" alt="">
+                                        <div class="group-products__item__images group-products__item__images--hero-bg">
+                                            <img src="images/dist/her-grom.png" alt="">
                                         </div>
                                     </div>
                                     <div class="group-products__item__col-desc">
@@ -2672,8 +2651,6 @@
             <a href="" class="link link--more">Смотреть все</a>
         </div>
     </div>
-
-    
 </div>
 
 <div id="modal1" class="modal" tabindex="-1">
