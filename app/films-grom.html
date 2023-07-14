@@ -1,5 +1,5 @@
 <!--#set var="title" value="Майор Гром: Чумной Доктор" -->
-<!--#include virtual="/parts/header.html" -->
+<!--#include virtual="/parts/header-back.html" -->
 <div class="films-top">
     <div class="films-top__bg">
         <picture>
@@ -9,33 +9,7 @@
         </picture>
     </div>
     <div class="films-top__desc">
-        <div class="wrapper">
-
-            <div class="breadcrumbs breadcrumbs--white">
-                <ol class="breadcrumbs__list nav" itemscope="itemscope"
-                    itemtype="https://schema.org/BreadcrumbList">
-                    <li itemprop="itemListElement" itemscope="itemscope"
-                        itemtype="https://schema.org/ListItem"
-                        class="breadcrumbs__item">
-                        <a href="/" itemprop="item">
-                            <span itemprop="name">Главная</span>
-                        </a>
-                        <meta itemprop="position" content="1">
-                    </li>
-                    <li itemprop="itemListElement" itemscope="itemscope"
-                        itemtype="https://schema.org/ListItem" class="breadcrumbs__item">
-                        <a href="/" itemprop="item">
-                            <span ditemprop="name">Кино</span>
-                        </a>
-                        <meta itemprop="position" content="2">
-                    </li>
-                    <li itemprop="itemListElement" itemscope="itemscope"
-                        itemtype="https://schema.org/ListItem" class="breadcrumbs__item">
-                        <span ditemprop="name">Майор Гром: Чумной Доктор</span>
-                        <meta itemprop="position" content="3">
-                    </li>
-                </ol>
-            </div>
+        <div class="wrapper tpad20">
 
             <div class="films-top__desc__inner">
                 <ul class="nav nav--tags">
@@ -725,7 +699,7 @@
     </div>
 </div>
 
-<div class="wrapper">
+<div class="wrapper fpad50">
     <div class="row">
         <div class="col-lg-6">
             <div class="plr-30">
@@ -1462,27 +1436,5 @@
 
 </div>
 
-<div class="wrapper">
-    <!--#include virtual="/parts/subscription.html" -->
-</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-
-        if (window.outerWidth > 768) {
-            if (document.getElementsByClassName("fade_in").length) {
-                Array.from(document.querySelectorAll('.fade_in')).forEach((el) => {
-                    gsap.from(el, {
-                        scrollTrigger: el, // start the animation when ".box" enters the viewport (once)
-                        y: 50,
-                        opacity: 0
-                    });
-                });
-            }
-        }
-    });
-</script>
-
-<!--#include virtual="/parts/footer-films.html" -->
+<!--#include virtual="/parts/footer.html" -->

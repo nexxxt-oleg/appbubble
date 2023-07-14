@@ -1,25 +1,7 @@
 <!--#set var="title" value="Контакты" -->
-<!--#include virtual="/parts/header.html" -->
+<!--#include virtual="/parts/header-back.html" -->
 
-<div class="wrapper">
-    <div class="breadcrumbs">
-        <ol class="breadcrumbs__list nav" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
-            <li itemprop="itemListElement" itemscope="itemscope"
-                itemtype="https://schema.org/ListItem"
-                class="breadcrumbs__item">
-                <a href="/" itemprop="item">
-                    <span itemprop="name">Главная</span>
-                </a>
-                <meta itemprop="position" content="1">
-            </li>
-            <li itemprop="itemListElement" itemscope="itemscope"
-                itemtype="https://schema.org/ListItem" class="breadcrumbs__item">
-                <span ditemprop="name">Контакты</span>
-                <meta itemprop="position" content="2">
-            </li>
-        </ol>
-    </div>
-
+<div class="wrapper tpad20 ">
     <h1 class="h2">КОНТАКТНАЯ ИНФОРМАЦИЯ</h1>
     <div class="contacts-page">
         <div class="contacts-page__left">
@@ -124,69 +106,71 @@
     </div>
 
 </div>
-<div class="gallery-slider">
-    <div id="gallerySlider" class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="images/dist/gal1.png" class="zoom-link" data-fancybox="gal1">
-                    <img src="images/dist/gal1.png" alt="">
-                </a>
+<div class="fpad80">
+    <div class="gallery-slider ">
+        <div id="gallerySlider" class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="images/dist/gal1.png" class="zoom-link" data-fancybox="gal1">
+                        <img src="images/dist/gal1.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/dist/gal1.png" class="zoom-link" data-fancybox="gal1">
+                        <img src="images/dist/gal1.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/dist/gal1.png" class="zoom-link" data-fancybox="gal1">
+                        <img src="images/dist/gal1.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/dist/gal1.png" class="zoom-link" data-fancybox="gal1">
+                        <img src="images/dist/gal1.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/dist/gal1.png" class="zoom-link" data-fancybox="gal1">
+                        <img src="images/dist/gal1.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/dist/gal1.png" class="zoom-link" data-fancybox="gal1">
+                        <img src="images/dist/gal1.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/dist/gal1.png" class="zoom-link" data-fancybox="gal1">
+                        <img src="images/dist/gal1.png" alt="">
+                    </a>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <a href="images/dist/gal1.png" class="zoom-link" data-fancybox="gal1">
-                    <img src="images/dist/gal1.png" alt="">
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <a href="images/dist/gal1.png" class="zoom-link" data-fancybox="gal1">
-                    <img src="images/dist/gal1.png" alt="">
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <a href="images/dist/gal1.png" class="zoom-link" data-fancybox="gal1">
-                    <img src="images/dist/gal1.png" alt="">
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <a href="images/dist/gal1.png" class="zoom-link" data-fancybox="gal1">
-                    <img src="images/dist/gal1.png" alt="">
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <a href="images/dist/gal1.png" class="zoom-link" data-fancybox="gal1">
-                    <img src="images/dist/gal1.png" alt="">
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <a href="images/dist/gal1.png" class="zoom-link" data-fancybox="gal1">
-                    <img src="images/dist/gal1.png" alt="">
-                </a>
-            </div>
+
+            <button class="swiper-button-next swiper-button-disabled"
+                    id="gallerySliderNext"
+                    tabindex="0">
+                <div class="swiper__nav swiper__nav--next swiper__nav--black">
+                    <div class="swiper__nav__inner">
+                        <svg class="icon" width="24" height="20">
+                            <use xlink:href="#svg-next-sl"></use>
+                        </svg>
+                    </div>
+                </div>
+            </button>
+
+            <button class="swiper-button-prev swiper-button-disabled"
+                    id="gallerySliderPrev"
+                    tabindex="-1">
+                <div class="swiper__nav swiper__nav--prev swiper__nav--black">
+                    <div class="swiper__nav__inner">
+                        <svg class="icon" width="24" height="20">
+                            <use xlink:href="#svg-prev-sl"></use>
+                        </svg>
+                    </div>
+                </div>
+            </button>
         </div>
-
-        <button class="swiper-button-next swiper-button-disabled"
-                id="gallerySliderNext"
-                tabindex="0" >
-            <div class="swiper__nav swiper__nav--next swiper__nav--black">
-                <div class="swiper__nav__inner">
-                    <svg class="icon" width="24" height="20">
-                        <use xlink:href="#svg-next-sl"></use>
-                    </svg>
-                </div>
-            </div>
-        </button>
-
-        <button class="swiper-button-prev swiper-button-disabled"
-                id="gallerySliderPrev"
-                tabindex="-1" >
-            <div class="swiper__nav swiper__nav--prev swiper__nav--black">
-                <div class="swiper__nav__inner">
-                    <svg class="icon" width="24" height="20">
-                        <use xlink:href="#svg-prev-sl"></use>
-                    </svg>
-                </div>
-            </div>
-        </button>
     </div>
 </div>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=0b5a3ac0-1e8b-4204-ba45-6e7d1716b54d"></script>

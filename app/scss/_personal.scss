@@ -2,7 +2,7 @@
   padding-top: 30px;
   background: #1a1a1a;
   padding-bottom: 50px;
-  border-top: 1px solid #393939;
+
 }
 
 .ico-center {
@@ -81,7 +81,6 @@
 }
 
 .personal-profile {
-  padding-top: 27px;
   padding-bottom: 30px;
 
   &__back {
@@ -1015,11 +1014,11 @@
 }
 
 .personal-profile__certificates {
-  margin-top: 40px;
+
   min-height: 490px;
   background: url("../images/dist/bg-lk-cert.jpg") 100% 0 no-repeat;
   background-size: 240px auto;
-  padding-top: 40px;
+  padding-top: 5px;
   .h2 {
     text-align: center;
     margin-bottom: 35px;
@@ -1121,7 +1120,7 @@
   min-height: 100%;
 }
 .personal-profile__friends {
-  padding-top: 50px;
+  padding-top: 5px;
   &__text {
     padding-top: 30px;
     padding-bottom: 35px;

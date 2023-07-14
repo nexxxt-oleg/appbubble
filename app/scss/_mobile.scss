@@ -1824,6 +1824,10 @@
   .col-lg-5 {
     width: 100%;
   }
+  .col-mob-6 {
+    width: 50% !important;
+  }
+
   .basket-section__delivery__item__title,
   .basket-section__delivery__item__header__cost {
     font-size: 18px;
@@ -2158,7 +2162,7 @@
     white-space: nowrap;
   }
   .mob-block-filter__border-bottom {
-    padding-bottom: 20px;
+    padding-bottom: 13px;
     border-bottom: 1px solid #ededed;
   }
   #mobLinkPage,
@@ -2185,8 +2189,8 @@
     }
   }
   .personal-account {
-    padding-top: 25px;
-    padding-bottom: 35px;
+    padding-top: 5px;
+    padding-bottom: 70px;
 
     .account-menu__user__ava__wrap {
       width: 50px;
@@ -2312,7 +2316,7 @@
     }
   }
   .personal-profile__friends {
-    padding-top: 40px;
+
 
     h3 {
       font-size: 18px;
@@ -2637,6 +2641,12 @@
       max-height: 370px;
       object-fit: cover;
     }
+  }
+  .about-series .series-read-top__col-poster {
+    top: 50px;
+  }
+  .series-read-top__row {
+    padding-top: 0;
   }
   .page-top-filter__links {
     flex-wrap: nowrap;
@@ -4110,8 +4120,6 @@
 
   .partners-top__col-form {
     width: auto;
-    margin-left: -10px;
-    margin-right: -10px;
   }
   .form-box {
     padding-left: 20px;

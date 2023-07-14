@@ -34,14 +34,17 @@
                 </div>
 
                 <div class="header__top__center">
-                    <a href="" class="header__top__logo">
-                        <svg width="140" height="42">
-                            <use xlink:href="#svg-logo"></use>
-                        </svg>
-                    </a>
+
                 </div>
 
-                <div class="header__top__right"></div>
+                <div class="header__top__right">
+                    <a href="" class="header__top__back">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20">
+                            <path fill="currentColor" d="M512,256C512,114.62,397.38,0,256,0S0,114.62,0,256,114.62,512,256,512,511.85,397.32,512,256ZM42.67,256C42.67,138.18,138.18,42.67,256,42.67S469.33,138.18,469.33,256,373.82,469.33,256,469.33,42.8,373.77,42.67,256Zm218.51,90.52L231,376.68,140.5,286.17a42.69,42.69,0,0,1,0-60.34L231,135.32l30.16,30.16L192,234.67H384v42.66H192Z"/>
+                        </svg>
+                        <span>НАЗАД</span>
+                    </a>
+                </div>
             </div>
             <div class="header__top__box-menu " id="topNav">
                 <div class="wrapper">
@@ -610,33 +613,7 @@
         </picture>
     </div>
     <div class="films-top__desc">
-        <div class="wrapper">
-
-            <div class="breadcrumbs breadcrumbs--white">
-                <ol class="breadcrumbs__list nav" itemscope="itemscope"
-                    itemtype="https://schema.org/BreadcrumbList">
-                    <li itemprop="itemListElement" itemscope="itemscope"
-                        itemtype="https://schema.org/ListItem"
-                        class="breadcrumbs__item">
-                        <a href="/" itemprop="item">
-                            <span itemprop="name">Главная</span>
-                        </a>
-                        <meta itemprop="position" content="1">
-                    </li>
-                    <li itemprop="itemListElement" itemscope="itemscope"
-                        itemtype="https://schema.org/ListItem" class="breadcrumbs__item">
-                        <a href="/" itemprop="item">
-                            <span ditemprop="name">Кино</span>
-                        </a>
-                        <meta itemprop="position" content="2">
-                    </li>
-                    <li itemprop="itemListElement" itemscope="itemscope"
-                        itemtype="https://schema.org/ListItem" class="breadcrumbs__item">
-                        <span ditemprop="name">Майор Гром: Чумной Доктор</span>
-                        <meta itemprop="position" content="3">
-                    </li>
-                </ol>
-            </div>
+        <div class="wrapper tpad20">
 
             <div class="films-top__desc__inner">
                 <ul class="nav nav--tags">
@@ -1326,7 +1303,7 @@
     </div>
 </div>
 
-<div class="wrapper">
+<div class="wrapper fpad50">
     <div class="row">
         <div class="col-lg-6">
             <div class="plr-30">
@@ -2063,163 +2040,8 @@
 
 </div>
 
-<div class="wrapper">
-    
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-
-        if (window.outerWidth > 768) {
-            if (document.getElementsByClassName("fade_in").length) {
-                Array.from(document.querySelectorAll('.fade_in')).forEach((el) => {
-                    gsap.from(el, {
-                        scrollTrigger: el, // start the animation when ".box" enters the viewport (once)
-                        y: 50,
-                        opacity: 0
-                    });
-                });
-            }
-        }
-    });
-</script>
-
-<footer class="footer">
-    <div class="footer__top">
-        <div class="wrapper footer__top__wrap">
-            <a href="/" class="footer__logo">
-                <svg width="140" height="42">
-                    <use xlink:href="#svg-logo"></use>
-                </svg>
-            </a>
-
-            <ul class="nav nav--soc">
-                <li>
-                    <a href="" target="_blank">
-                        <svg width="24" height="14">
-                            <use xlink:href="#svg-vk"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank">
-                        <svg width="24" height="20">
-                            <use xlink:href="#svg-telegram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank">
-                        <svg width="24" height="17">
-                            <use xlink:href="#svg-youtube"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank">
-                        <svg width="22" height="22">
-                            <use xlink:href="#svg-dzen"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="wrapper footer__center">
-        <div class="footer__center__wrap">
-            <div class="footer__center__col1">
-                <div class="footer__center__nav-caption">МАГАЗИН</div>
-                <ul class="nav footer__center__nav">
-                    <li><a href="">Электронные комиксы</a></li>
-                    <li><a href="">Печатные комиксы</a></li>
-                    <li><a href="">Мерч</a></li>
-                    <li><a href="">Оплата</a></li>
-                    <li><a href="">Доставка</a></li>
-                    <li><a href="">Возврат и обмен</a></li>
-                    <li><a href="">Где купить?</a></li>
-                    <li><a href="">Программа лояльности</a></li>
-                </ul>
-            </div>
-            <div class="footer__center__col2">
-                <div class="footer__center__nav-caption">BUBBLE</div>
-                <div class="d-flex">
-                    <ul class="nav footer__center__nav footer__center__col2__col1">
-                        <li><a href="">О нас</a></li>
-                        <li><a href="">Герои</a></li>
-                        <li><a href="">Жанры</a></li>
-                        <li><a href="">Фильмы и Сериалы</a></li>
-                        <li><a href="">Новости</a></li>
-                        <li><a href="">Контакты</a></li>
-                        <li><a href="">Партнерам</a></li>
-                        <li><a href="">Вакансии</a></li>
-                    </ul>
-                    <ul class="nav footer__center__nav footer__center__col2__col2">
-                        <li><a href="">Пользовательское соглашение</a></li>
-                        <li><a href="">Политика конфиденциальности</a></li>
-                        
-                        <li class="footer__center__nav__link-films">
-                            <a href="">Майор Гром: Чумной Доктор</a>
-                        </li>
-                        <li><a href="">Гром: Трудное детство</a></li>
 
 
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__center__col3">
-                <div class="footer__center__mob-contact">
-                    <a href="tel:+74951502663" class="footer__center__phone">+7 495 150-26-63</a>
-                    <div class="footer__center__work-time">
-                        <span>Пн-Пт: 11:00 - 18:00</span>
-                        <span>Сб-Вс: Выходные</span>
-                    </div>
-                </div>
-                <div class="footer__center__application">
-                    <div class="footer__center__application__title">Приложение BUBBLE</div>
-                    <div class="footer__center__application__text">Загружайте и читайте комиксы онлайн</div>
-                    <div class="footer__center__application__links">
-                        <a href="" target="_blank">
-                            <div class="footer__center__application__as">
-                                <span>Загрузить в</span>
-                                <b>App Store</b>
-                            </div>
-                        </a>
-                        <a href="" target="_blank">
-                            <div class="footer__center__application__gp">
-                                <span>Доступно в</span>
-                                <b>Google Play</b>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__center__col4">
-                <ul class="nav footer__center__nav">
-                    <li><a href="">Пользовательское соглашение</a></li>
-                    <li><a href="">Политика конфиденциальности</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer__bottom">
-        <div class="wrapper">
-            <div class="footer__bottom__row">
-                <span class="footer__bottom__copy">Копирование материалов без разрешения запрещено © ООО "БАБЛ", 2017-2022</span>
-                <a href="" target="_blank" class="footer__bottom__web">
-                    <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370.23 409.24">
-                        <path fill="currentColor"
-                              d="M352,0c-6.68,0-12.11,6.34-24,20.22-18.26,21.33-48.84,57.05-80.53,57.05H122.76c-31.7,0-62.26-35.72-80.53-57C30.34,6.34,24.92,0,18.24,0,5.45,0,.33,10.83,0,18.41V409.24H370.23V18.09C369.9,10.83,364.78,0,352,0Zm3.42,353.53L185.8,381.18a6.71,6.71,0,0,1-2.19,0L14.81,353.55l0-336c.17-2.1.85-3.4,2.06-3.86,2.78,2.22,8.67,9.08,13.51,14.74,20,23.33,53.45,62.42,92.29,62.42H247.59c38.83,0,72.3-39.09,92.3-62.43,4.83-5.62,10.71-12.51,13.51-14.73,1.46.54,1.92,2.28,2,3.46V353.53Z"/>
-                        <path fill="currentColor"
-                              d="M216.26,237.7h-64a6.37,6.37,0,0,0-4.4,10.84l26.51,27a13.81,13.81,0,0,0,19.81,0l26.51-27A6.37,6.37,0,0,0,216.26,237.7Z"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </div>
-</footer>
 
 <div style="display: none">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -2401,6 +2223,7 @@
 
 </div> <!-- end main-->
 <script src="js/vendor.min.js"></script>
+
 <script src="js/app.min.js"></script>
 </body>
 </html>
