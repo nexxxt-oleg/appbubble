@@ -488,7 +488,9 @@
 .header__nav__submenu__lavel1__footer {
   padding-top: 70px;
 }
-
+.header__top__left .header__top__close {
+  margin-right: 5px;
+}
 .info-count {
   min-width: 16px;
   padding: 0 3px;
@@ -947,6 +949,7 @@
 }
 .header__top__back {
   margin-right: auto;
+  margin-left: 5px;
 }
 
 .header__top__logo {
@@ -962,7 +965,9 @@
 .header__top__right {
   margin-left: -10px;
 }
-
+.btn--border-black {
+  text-decoration: none !important;
+}
 .header__top__left {
   margin-right: -10px;
 }
