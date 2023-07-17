@@ -961,7 +961,9 @@
   padding: 5px;
   width: 30px;
 }
-
+.header__top__right__nav a.active {
+  color: #fff !important;
+}
 .header__top__right {
   margin-left: -10px;
 }
