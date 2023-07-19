@@ -4694,3 +4694,9 @@ b, strong {
 .fpad80 {
   padding-bottom: 80px;
 }
+.choices {
+  z-index: 100;
+  &.is-open {
+    z-index: 200;
+  }
+}
