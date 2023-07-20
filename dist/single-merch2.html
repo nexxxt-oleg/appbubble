@@ -837,32 +837,37 @@
                         </div>
                     </div>
 
-                    <div class="page-ebook__section-tabs tabs-box">
-                        <div class="page-ebook__section-tabs__header">
-                            <ul class="nav page-ebook__section-tabs__nav">
-                                <li><a href="" class="active">Описание</a></li>
-                                <li><a href="">Отзывы <span>7</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="page-ebook__section-tabs__body tabs-box__body ">
-                            <div class="tabs-box__body__mob-accordion">
-                                <div class="tabs-box__body__mob-accordion__header active">
-                                    Описание
+                    <div class="page-ebook__section-tabs">
+                        <div class="page-ebook__section-tabs__body tabs-box__body accordion-container">
+                            <div class="tabs-box__body__mob-accordion ac">
+                                <div class="tabs-box__body__mob-accordion__header ac-header">
+                                    <span class="ac-trigger">Описание</span>
                                 </div>
-                                <div class="tabs-box__body__item text active" id="tab1">
-                                    <p>В этой футболке вы ВЕЛИКОЛЕПНЫ!
-                                        <br>
-                                        <br>
-                                        Размер: <b>XS</b> <br>
-                                        Цвет: <b>Синий</b> <br>
-                                        Материал: <b>100% хлопок</b></p>
+                                <div class=" text ac-panel">
+                                    <p>Фёдор Прокопенко – легенда петербургского сыска и звёздный наставник майора Грома
+                                        (три
+                                        звезды на каждом погоне!) – вынужден взглянуть в глаза своему прошлому. Рёв
+                                        моторов
+                                        и
+                                        грохот взрывов не могут заглушить саднящую боль в душе закалённого сыщика,
+                                        оказавшегося
+                                        перед выбором – сохранить семью либо предать друга! Сможет ли Игорь Гром в
+                                        круговороте
+                                        безумия, охватившего город, сохранить самое ценное, что передал ему друг и
+                                        учитель?
+                                        Сможет ли Дима Дубин выстоять в неравном бою с говорящей рыбой? Ответы на эти
+                                        вопросы
+                                        разобьют сердца героев. Они придут тогда, когда прогремит ГРОМ НА ВОСХОДЕ!</p>
+
+                                    <p><span class="fs-12">Количество страниц: <b>24</b></span><br>
+                                        <span class="fs-12">Дата выхода: <b>01.01.2021</b></span></p>
                                 </div>
                             </div>
-                            <div class="tabs-box__body__mob-accordion">
-                                <div class="tabs-box__body__mob-accordion__header">
-                                    Отзывы  <span>7</span>
+                            <div class="tabs-box__body__mob-accordion ac">
+                                <div class="tabs-box__body__mob-accordion__header ac-header">
+                                    <span class="ac-trigger">Отзывы <span class="count-rev">7</span></span>
                                 </div>
-                                <div class="tabs-box__body__item active" id="tab2">
+                                <div class="ac-panel">
                                     <div class="page-ebook__reviews row">
                                         <div class="page-ebook__reviews__left col-lg-6">
                                             <div class="page-ebook__reviews__rating-top">
@@ -929,9 +934,10 @@
                                             <div class="page-ebook__reviews__not-auth">
                                                 <p>Оставлять отзывы и оценки могут только авторизованные
                                                     пользователи.</p>
-                                                <a href="" class="link">Авторизация</a>
+                                                <a href="" class="link fs-14">Авторизация</a>
                                             </div>
-                                            <button onclick="openModal('modal1')" class="btn btn--blue btn--bay w-18 disabled">
+                                            <button onclick="openModal('modal1')"
+                                                    class="btn btn--blue btn--bay w-18 disabled">
                                                 <span class="btn__text btn__text--ico-mob">ОСТАВИТЬ ОТЗЫВ</span>
                                             </button>
                                         </div>
@@ -1848,6 +1854,11 @@
     </div>
 </div>
 </div>
+
+<script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+<script>
+    new Accordion('.accordion-container');
+</script>
 
 
 <div style="display: none">
