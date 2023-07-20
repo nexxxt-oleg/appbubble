@@ -2819,40 +2819,7 @@
   .tabs-box__body__mob-accordion {
     border-bottom: 1px solid #ededed;
   }
-  .tabs-box__body__mob-accordion__header {
-    display: block;
-    height: 52px;
-    padding-right: 15px;
-    position: relative;
-    font-size: 14px;
-    line-height: 52px;
-    font-weight: bold;
 
-    span {
-      font-weight: 400;
-    }
-
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 1;
-      top: 50%;
-      right: 0;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='arrow-circle-down'%3E%3Cpath fill='%232067fb' d='M256,0C114.62,0,0,114.62,0,256S114.62,512,256,512,512,397.38,512,256,397.32.15,256,0ZM378.26,247.47,269.74,357.33a19.19,19.19,0,0,1-27.15.33l-.33-.33L133.74,247.47a19.71,19.71,0,0,1,13.74-33.6h217a19.71,19.71,0,0,1,13.74,33.6Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      width: 12px;
-      height: 12px;
-      margin-top: -6px;
-      background-size: contain;
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      transition: all 0.2s ease-in-out;
-    }
-
-    &.active::after {
-      transform: rotate(180deg);
-    }
-  }
   .page-ebook__section-tabs__body {
     border-top: 1px solid #ededed;
     margin-bottom: 30px;

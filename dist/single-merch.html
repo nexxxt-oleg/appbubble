@@ -760,19 +760,13 @@
                         </div>
                     </div>
 
-                    <div class="page-ebook__section-tabs tabs-box">
-                        <div class="page-ebook__section-tabs__header">
-                            <ul class="nav page-ebook__section-tabs__nav">
-                                <li><a href="" class="active">Описание</a></li>
-                                <li><a href="">Отзывы <span>7</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="page-ebook__section-tabs__body tabs-box__body ">
-                            <div class="tabs-box__body__mob-accordion">
-                                <div class="tabs-box__body__mob-accordion__header active">
-                                    Описание
+                    <div class="page-ebook__section-tabs">
+                        <div class="page-ebook__section-tabs__body tabs-box__body accordion-container">
+                            <div class="tabs-box__body__mob-accordion ac">
+                                <div class="tabs-box__body__mob-accordion__header ac-header">
+                                    <span class="ac-trigger">Описание</span>
                                 </div>
-                                <div class="tabs-box__body__item text active" id="tab1">
+                                <div class=" text ac-panel">
                                     <p>Фёдор Прокопенко – легенда петербургского сыска и звёздный наставник майора Грома
                                         (три
                                         звезды на каждом погоне!) – вынужден взглянуть в глаза своему прошлому. Рёв
@@ -788,15 +782,15 @@
                                         вопросы
                                         разобьют сердца героев. Они придут тогда, когда прогремит ГРОМ НА ВОСХОДЕ!</p>
 
-                                    <p>Количество страниц: <b>24</b><br>
-                                        Дата выхода: <b>01.01.2021</b></p>
+                                    <p><span class="fs-12">Количество страниц: <b>24</b></span><br>
+                                        <span class="fs-12">Дата выхода: <b>01.01.2021</b></span></p>
                                 </div>
                             </div>
-                            <div class="tabs-box__body__mob-accordion">
-                                <div class="tabs-box__body__mob-accordion__header">
-                                    Отзывы  <span>7</span>
+                            <div class="tabs-box__body__mob-accordion ac">
+                                <div class="tabs-box__body__mob-accordion__header ac-header">
+                                    <span class="ac-trigger">Отзывы <span class="count-rev">7</span></span>
                                 </div>
-                                <div class="tabs-box__body__item active" id="tab2">
+                                <div class="ac-panel">
                                     <div class="page-ebook__reviews row">
                                         <div class="page-ebook__reviews__left col-lg-6">
                                             <div class="page-ebook__reviews__rating-top">
@@ -863,9 +857,10 @@
                                             <div class="page-ebook__reviews__not-auth">
                                                 <p>Оставлять отзывы и оценки могут только авторизованные
                                                     пользователи.</p>
-                                                <a href="" class="link">Авторизация</a>
+                                                <a href="" class="link fs-14">Авторизация</a>
                                             </div>
-                                            <button onclick="openModal('modal1')" class="btn btn--blue btn--bay w-18 disabled">
+                                            <button onclick="openModal('modal1')"
+                                                    class="btn btn--blue btn--bay w-18 disabled">
                                                 <span class="btn__text btn__text--ico-mob">ОСТАВИТЬ ОТЗЫВ</span>
                                             </button>
                                         </div>
@@ -1653,134 +1648,139 @@
     </div>
 
 </div>
-<div id="modalBackdrop" class="modal-backdrop" >
-<div id="modal1" class="modal" tabindex="-1">
-    <div class="modal__dialog">
-        <div class="modal__content">
-            <div class="modal__close" onclick="closeModal()"></div>
-            <div class="modal__content__title">Оставить отзыв</div>
-            <form class="form" action="">
-                <div class="form__raiting">
-                    <div class="form__raiting__label">ВАША ОЦЕНКА</div>
-                    <div class="rating-stars rating-stars--big">
-                        <div class="rating-stars__list rating-area">
-                            <input type="radio" id="star-5" name="rating" value="5">
-                            <label for="star-5" title="5">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514.67 494.81">
-                                    <path fill="currentColor"
-                                          d="M416.64,494.81,257.34,377.73,98.05,494.81l61.16-189.08L0,189.4H196.57L257.34,0l60.78,189.4H514.67L355.48,305.73Z"/>
-                                </svg>
-                            </label>
-                            <input type="radio" id="star-4" name="rating" value="4">
-                            <label for="star-4" title="4">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514.67 494.81">
-                                    <path fill="currentColor"
-                                          d="M416.64,494.81,257.34,377.73,98.05,494.81l61.16-189.08L0,189.4H196.57L257.34,0l60.78,189.4H514.67L355.48,305.73Z"/>
-                                </svg>
-                            </label>
-                            <input type="radio" id="star-3" name="rating" value="3">
-                            <label for="star-3" title="3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514.67 494.81">
-                                    <path fill="currentColor"
-                                          d="M416.64,494.81,257.34,377.73,98.05,494.81l61.16-189.08L0,189.4H196.57L257.34,0l60.78,189.4H514.67L355.48,305.73Z"/>
-                                </svg>
-                            </label>
-                            <input type="radio" id="star-2" name="rating" value="2">
-                            <label for="star-2" title="2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514.67 494.81">
-                                    <path fill="currentColor"
-                                          d="M416.64,494.81,257.34,377.73,98.05,494.81l61.16-189.08L0,189.4H196.57L257.34,0l60.78,189.4H514.67L355.48,305.73Z"/>
-                                </svg>
-                            </label>
-                            <input type="radio" id="star-1" name="rating" value="1">
-                            <label for="star-1" title="1">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514.67 494.81">
-                                    <path fill="currentColor"
-                                          d="M416.64,494.81,257.34,377.73,98.05,494.81l61.16-189.08L0,189.4H196.57L257.34,0l60.78,189.4H514.67L355.48,305.73Z"/>
-                                </svg>
-                            </label>
+<div id="modalBackdrop" class="modal-backdrop">
+    <div id="modal1" class="modal" tabindex="-1">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__close" onclick="closeModal()"></div>
+                <div class="modal__content__title">Оставить отзыв</div>
+                <form class="form" action="">
+                    <div class="form__raiting">
+                        <div class="form__raiting__label">ВАША ОЦЕНКА</div>
+                        <div class="rating-stars rating-stars--big">
+                            <div class="rating-stars__list rating-area">
+                                <input type="radio" id="star-5" name="rating" value="5">
+                                <label for="star-5" title="5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514.67 494.81">
+                                        <path fill="currentColor"
+                                              d="M416.64,494.81,257.34,377.73,98.05,494.81l61.16-189.08L0,189.4H196.57L257.34,0l60.78,189.4H514.67L355.48,305.73Z"/>
+                                    </svg>
+                                </label>
+                                <input type="radio" id="star-4" name="rating" value="4">
+                                <label for="star-4" title="4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514.67 494.81">
+                                        <path fill="currentColor"
+                                              d="M416.64,494.81,257.34,377.73,98.05,494.81l61.16-189.08L0,189.4H196.57L257.34,0l60.78,189.4H514.67L355.48,305.73Z"/>
+                                    </svg>
+                                </label>
+                                <input type="radio" id="star-3" name="rating" value="3">
+                                <label for="star-3" title="3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514.67 494.81">
+                                        <path fill="currentColor"
+                                              d="M416.64,494.81,257.34,377.73,98.05,494.81l61.16-189.08L0,189.4H196.57L257.34,0l60.78,189.4H514.67L355.48,305.73Z"/>
+                                    </svg>
+                                </label>
+                                <input type="radio" id="star-2" name="rating" value="2">
+                                <label for="star-2" title="2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514.67 494.81">
+                                        <path fill="currentColor"
+                                              d="M416.64,494.81,257.34,377.73,98.05,494.81l61.16-189.08L0,189.4H196.57L257.34,0l60.78,189.4H514.67L355.48,305.73Z"/>
+                                    </svg>
+                                </label>
+                                <input type="radio" id="star-1" name="rating" value="1">
+                                <label for="star-1" title="1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514.67 494.81">
+                                        <path fill="currentColor"
+                                              d="M416.64,494.81,257.34,377.73,98.05,494.81l61.16-189.08L0,189.4H196.57L257.34,0l60.78,189.4H514.67L355.48,305.73Z"/>
+                                    </svg>
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="fpad30">
-                    <textarea name="rew" class="form__textarea" placeholder="Напишите отзыв"></textarea>
-                </div>
-                <div class="form__footer-row">
-                    <div class="form__footer-row__left">
-                        <label class="form__chekbox">
-                            <input type="checkbox" value="1" name="a">
-                            <span class="form__chekbox__value">Оставить отзыв анонимно</span>
-                        </label>
+                    <div class="fpad30">
+                        <textarea name="rew" class="form__textarea" placeholder="Напишите отзыв"></textarea>
                     </div>
-                    <div class="form__footer-row__right">
-                        <button class="btn btn--blue btn--bay w-18" type="submit">
+                    <div class="form__footer-row">
+                        <div class="form__footer-row__left">
+                            <label class="form__chekbox">
+                                <input type="checkbox" value="1" name="a">
+                                <span class="form__chekbox__value">Оставить отзыв анонимно</span>
+                            </label>
+                        </div>
+                        <div class="form__footer-row__right">
+                            <button class="btn btn--blue btn--bay w-18" type="submit">
                             <span class="btn__text btn__text--ico-mob">
                                 ОПУБЛИКОВАТЬ
                             </span>
-                        </button>
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="modal2" class="modal" tabindex="-1">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__close" onclick="closeModal()"></div>
+                <div class="modal__content__title">Размерная сетка</div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>РАЗМЕР</th>
+                        <th>ВЫСОТА (см)</th>
+                        <th>ШИРИНА (см)</th>
+                        <th>ДЛИНА РУКАВА (см)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>XS</td>
+                        <td>68</td>
+                        <td>51</td>
+                        <td>39</td>
+                    </tr>
+                    <tr>
+                        <td>S</td>
+                        <td>71</td>
+                        <td>53</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>76</td>
+                        <td>58</td>
+                        <td>44</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>77</td>
+                        <td>77</td>
+                        <td>77</td>
+                    </tr>
+                    <tr>
+                        <td>XL</td>
+                        <td>77</td>
+                        <td>77</td>
+                        <td>77</td>
+                    </tr>
+                    <tr>
+                        <td>XXL</td>
+                        <td>77</td>
+                        <td>77</td>
+                        <td>77</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
-<div id="modal2" class="modal"  tabindex="-1">
-    <div class="modal__dialog">
-        <div class="modal__content">
-            <div class="modal__close" onclick="closeModal()"></div>
-            <div class="modal__content__title">Размерная сетка</div>
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>РАЗМЕР</th>
-                    <th>ВЫСОТА (см)</th>
-                    <th>ШИРИНА (см)</th>
-                    <th>ДЛИНА РУКАВА (см)</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>XS</td>
-                    <td>68</td>
-                    <td>51</td>
-                    <td>39</td>
-                </tr>
-                <tr>
-                    <td>S</td>
-                    <td>71</td>
-                    <td>53</td>
-                    <td>42</td>
-                </tr>
-                <tr>
-                    <td>M</td>
-                    <td>76</td>
-                    <td>58</td>
-                    <td>44</td>
-                </tr>
-                <tr>
-                    <td>L</td>
-                    <td>77</td>
-                    <td>77</td>
-                    <td>77</td>
-                </tr>
-                <tr>
-                    <td>XL</td>
-                    <td>77</td>
-                    <td>77</td>
-                    <td>77</td>
-                </tr>
-                <tr>
-                    <td>XXL</td>
-                    <td>77</td>
-                    <td>77</td>
-                    <td>77</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-</div>
+
+<script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+<script>
+    new Accordion('.accordion-container');
+</script>
 
 
 <div style="display: none">

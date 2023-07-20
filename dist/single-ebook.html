@@ -993,20 +993,13 @@
                         </div>
                     </div>
 
-                    <div class="page-ebook__section-tabs tabs-box">
-                        <div class="page-ebook__section-tabs__header">
-                            <ul class="nav page-ebook__section-tabs__nav">
-                                <li><a href="" class="active">Описание</a></li>
-                                <li><a href="">Отзывы <span>7</span></a></li>
-                                <li><a href="">Как читать серию</a></li>
-                            </ul>
-                        </div>
-                        <div class="page-ebook__section-tabs__body tabs-box__body ">
-                            <div class="tabs-box__body__mob-accordion">
-                                <div class="tabs-box__body__mob-accordion__header active">
-                                    Описание
+                    <div class="page-ebook__section-tabs">
+                        <div class="page-ebook__section-tabs__body tabs-box__body accordion-container">
+                            <div class="tabs-box__body__mob-accordion ac">
+                                <div class="tabs-box__body__mob-accordion__header ac-header">
+                                    <span class="ac-trigger">Описание</span>
                                 </div>
-                                <div class="tabs-box__body__item text active" id="tab1">
+                                <div class=" text ac-panel">
                                     <p>Фёдор Прокопенко – легенда петербургского сыска и звёздный наставник майора Грома
                                         (три
                                         звезды на каждом погоне!) – вынужден взглянуть в глаза своему прошлому. Рёв
@@ -1026,11 +1019,11 @@
                                         <span class="fs-12">Дата выхода: <b>01.01.2021</b></span></p>
                                 </div>
                             </div>
-                            <div class="tabs-box__body__mob-accordion">
-                                <div class="tabs-box__body__mob-accordion__header">
-                                    Отзывы <span>7</span>
+                            <div class="tabs-box__body__mob-accordion ac">
+                                <div class="tabs-box__body__mob-accordion__header ac-header">
+                                    <span class="ac-trigger">Отзывы <span class="count-rev">7</span></span>
                                 </div>
-                                <div class="tabs-box__body__item active" id="tab2">
+                                <div class="ac-panel" >
                                     <div class="page-ebook__reviews row">
                                         <div class="page-ebook__reviews__left col-lg-6">
                                             <div class="page-ebook__reviews__rating-top">
@@ -1400,11 +1393,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tabs-box__body__mob-accordion">
-                                <div class="tabs-box__body__mob-accordion__header">
-                                    Как читать серию
+                            <div class="tabs-box__body__mob-accordion ac">
+                                <div class="tabs-box__body__mob-accordion__header ac-header">
+                                    <span class="ac-trigger">Как читать серию</span>
                                 </div>
-                                <div class="tabs-box__body__item active" id="tab3">
+                                <div class="ac-panel">
 
                                     <div class="page-ebook__section-sku mb-15">
                                         <div class="page-ebook__section-sku__title">ПРИКВЕЛЫ</div>
@@ -2776,6 +2769,13 @@
 
 
 <div id="modalBackdrop" class="modal-backdrop" onclick="closeModal()"></div>
+
+
+
+<script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+<script>
+    new Accordion('.accordion-container');
+</script>
 
 
 <div style="display: none">
