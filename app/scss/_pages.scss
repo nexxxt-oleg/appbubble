@@ -4162,7 +4162,7 @@ b, strong {
 
 .individ-footer {
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 
   span {
     display: inline-block;
@@ -4699,4 +4699,34 @@ b, strong {
   &.is-open {
     z-index: 200;
   }
+}
+.col-xl-4 {
+  width: 33.333%;
+
+}
+.btn-text {
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;
+  font-weight: bold;
+  padding-top: 3px;
+  font-family: "PT Sans Narrow";
+}
+
+#mobLinkPage .swiper-slide,
+#mobLinkPage2 .swiper-slide,
+#mobSearchOptions .swiper-slide {
+  width: auto;
+}
+
+.personal-profile__progress-item.personal-profile__progress-item--min {
+  min-height: 100px;
+  padding-bottom: 20px;
+}
+.mb-5 {
+  margin-bottom: 5px;
 }
